@@ -1,0 +1,712 @@
+/* TITULO Y BARRA DE NAVEGACIÓN */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#titleLog{
+    font-family: 'Rammetto One', cursive;
+    color:#504F4F;
+    padding: 80px;    
+    text-align: center;
+    font-size: 80px;
+
+}
+.iconsNav{
+    text-align: right;
+    padding: 80px;
+    font-size: 20px;
+    color:#504F4F;
+}
+
+
+.index-head{
+    background-color:white;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin-top: -80px;
+    padding-top: 0%;
+
+  }
+nav {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align:left; font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 15px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+nav a{
+    color:#504F4F;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav :hover{
+    background-color: rgb(227, 231, 160);
+    color: rgb(174, 182, 29) ;
+    transition:0.8s;
+    border-radius: 15px;
+}
+/* Para que se tiña de color cuando acerque el cursor */
+
+.product h2{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold; 
+    color: rgb(70, 67, 67);
+    padding: 15px;
+}
+
+
+
+/* BODY */
+
+.carrusel ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carruselFotos img{
+    width: 1400px;
+    height: 650px;
+    object-fit: contain;
+}
+.carruselFotos{
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+}
+/* Gap para separar las fotos entre si - Overflor para la barra del carrusel*/
+.carruselMenu{
+    display: none;
+}
+
+.parrafoGeneral{
+  color: #504F4F;  
+  text-align: start;
+  padding: 15px;
+}
+
+
+h1{
+    color: #504F4F;
+    padding: 15px;
+}
+
+p{
+    display: flex;
+    justify-content: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #504F4F;
+    padding: 15px;
+    text-align: left;
+    text-align: justify;  
+    margin-left: 20px; 
+}
+
+/* INDEX */
+.pIndex{
+ text-align: left;
+ margin-left: 500px;
+ margin-right: 500px;
+}
+.video-div{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: auto;
+    text-align: center;
+    
+}
+.video-banner{
+    height: 100%;
+    width: auto;
+    
+}
+
+
+/* ---------------- Trabajamos con GRID ----------------*/
+
+/* GRID P/HEADER */
+.index-head{
+    grid-area: index-header;
+    display: grid;
+    grid-template-areas:
+    "top-navbar top-navbar top-navbar top-navbar"
+    "nav-bar nav-bar nav-bar nav-bar";
+}
+
+
+.top-navbar{
+    grid-area: top-navbar;
+}
+.nav-bar{
+    grid-area: nav-bar;
+}
+
+ /* GRID P/HEADER */
+.celulares{
+    grid-area: celulares;
+    display: grid;
+    grid-template-areas: 
+    "phone1 phone1 phone1 phone1"
+    "phone2 phone2 phone2 phone2"
+    "phone3 phone3 phone3 phone3"
+    "phone4 phone4 phone4 phone4";    
+}
+
+#phone1 {
+    grid-area: phone1;
+}
+#phone2 {
+    grid-area: phone2;
+}
+#phone3 {
+    grid-area: phone3;
+}
+#phone4 {
+    grid-area: phone4;
+}
+
+.accesorios{
+    grid-area: accesorios;
+    display: grid;
+    grid-template-areas:     
+    "funda1 funda1 funda1 funda1"
+    "funda2 funda2 funda2 funda2"
+    "funda3 funda3 funda3 funda3"
+    "funda4 funda4 funda4 funda4";
+}
+
+#funda1{
+    grid-area: funda1;
+}
+#funda2{
+    grid-area: funda2;
+}
+#funda3{
+    grid-area: funda3;
+}
+#funda4{
+    grid-area: funda4;
+}
+
+.others{
+    grid-area: others;
+    
+    display: grid;
+    grid-template-areas:     
+    "cargador1 cargador1 cargador1 cargador1"
+    "cargador2 cargador2 cargador2 cargador2"
+    "cargador3 cargador3 cargador3 cargador3"
+    "cargador4 cargador4 cargador4 cargador4";
+}
+#cargador1{
+    grid-area: cargador1;
+}
+#cargador2{
+    grid-area: cargador2;
+}
+#cargador3{
+    grid-area: cargador3;
+}
+#cargador4{
+    grid-area: cargador4;
+}
+  /* GRID P/FOOTER */
+  .footer-article-container{
+    grid-area: footer-article-container;
+    display: grid;
+    grid-template-areas:
+    "leyes leyes leyes leyes"
+    "redes redes redes redes"
+    "mediosDePago mediosDePago mediosDePago mediosDePago"
+    "contactanos contactanos contactanos contactanos";
+}
+
+
+.leyes{
+    grid-area: leyes;
+}
+.redes{
+    grid-area: redes;
+}
+.mediosDePago{
+    grid-area: mediosDePago;
+}
+.contactanos{
+    grid-area: contactanos;
+}
+ /* GRID P/FOOTER */ 
+/* ---------------- Trabajamos con GRID ----------------*/
+
+.product img{
+    width: 350px;
+    height: 350px;
+}
+.product{
+    text-align: justify;
+    text-align: center;
+    border: #c5ced8 8px solid;
+    border-radius: 20px;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+}
+.product :hover{
+    background-color: rgb(196, 196, 189);
+    transition:0.8s;
+    border-radius: 15px;
+}
+.button {
+    cursor: pointer;;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    color: rgb(70, 67, 67);
+    padding: 15px; 
+    margin-left: 20px;
+}
+
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    color: rgb(70, 67, 67);
+    padding: 15px;  
+}
+.opiniones{
+    text-align: center;
+}
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    color: rgb(70, 67, 67);
+    padding: 15px;
+}
+
+.sobreNosotros{
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* PESTAÑA DE SERVICIOS */
+
+.imgService {
+    width: 100%;
+    height: 80vh;
+}
+
+
+.lista{
+    font-family: 'Open Sans', sans-serif;
+    color: #504F4F;
+    padding: 25px;
+    text-align: left; 
+    margin-left: 20px; 
+}
+.fotoServicio{
+    text-align: center;
+}
+
+.formulario{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold; 
+    color: rgb(70, 67, 67);
+    text-align: center;
+    background-image: url(/img/Diseño\ sin\ título\ \(2\).jpg) ;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+    margin-left: 25%;
+
+}
+
+.comentarios{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-left: 390px;
+    padding: 20px, 20px;
+    text-align: justify;
+    text-align: center;
+    
+}
+.caja1{
+    border: #c5ced8 8px inset;
+    border-radius: 20px;
+    width: 350px;
+    height: 150px;
+    float: left;
+}
+.caja2{
+    border: #c5ced8 8px inset;
+    border-radius: 20px;
+    width: 350px;
+    height: 150px;
+    float: left;
+}
+.caja3{
+    border: #c5ced8 8px inset;
+    border-radius: 20px;
+    width: 350px;
+    height: 150px;
+    float: left;
+}
+
+/* NOVEDADES */
+
+.novedades{
+    padding: 15px;
+    text-align: center;
+}
+
+
+.pNovedades{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.novedades{
+    grid-area: novedades;
+    display: grid;
+    grid-template-areas: 
+    "nov1 nov1 nov2 nov2"
+    "nov1 nov1 nov2 nov2"
+    "nov3 nov3 nov4 nov4"
+    "nov3 nov3 nov4 nov4";    
+}
+
+.nov1 {
+    grid-area: nov1 ;
+}
+.nov2 {
+    grid-area: nov2;
+}
+.nov3 {
+    grid-area: nov3;
+}
+.nov4 {
+    grid-area: nov4;
+}
+
+
+
+/* FORMULARIO */
+
+form input{
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form textarea{
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* FOOTER */
+footer h3{
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold; 
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    color:white; 
+    font-size: 15px;
+
+}
+
+footer {
+        background-color: #868485;
+        color:white;
+        padding: 20px 5%;
+        margin-top: 25px;     
+}
+
+.leyes{
+    margin: 20px 0px;
+    padding: 20px;
+    text-align: left;
+    font-size: smaller !important
+}
+
+footer i{
+    font-size: 1em;
+    margin-bottom: 10px;
+    color:white;
+  }
+  #logocontacto{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:white;
+  }
+.redes{
+        text-align: center;  
+        padding: auto;    
+}
+
+.footer-article-container{
+    display: grid;
+    max-width: 90%;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax( 150px,1fr) ); gap: 16px;
+  }
+
+  .copyright{
+    font-size: 10px;
+    color: black;
+    text-align: center;
+  }
+
+ .boton {
+    position:fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: green;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
+    z-index: 100;
+    transition: all 300ms ease;
+ }
+
+ 
+ 
+
+ 
+ /* TABLETS PEQUEÑAS */
+ @media (min-width:480px) {
+    .celulares{
+        grid-area: celulares;
+        display: grid;
+        grid-template-areas: 
+        "phone1 phone1 phone2 phone2"
+        "phone3 phone3 phone4 phone4";    
+    }
+    
+    #phone1 {
+        grid-area: phone1;
+    }
+    #phone2 {
+        grid-area: phone2;
+    }
+    #phone3 {
+        grid-area: phone3;
+    }
+    #phone4 {
+        grid-area: phone4;
+    }
+    
+    .accesorios{
+        grid-area: accesorios;
+        display: grid;
+        grid-template-areas:     
+        "funda1 funda1 funda2 funda2"
+        "funda3 funda3 funda4 funda4";
+    }
+    
+    #funda1{
+        grid-area: funda1;
+    }
+    #funda2{
+        grid-area: funda2;
+    }
+    #funda3{
+        grid-area: funda3;
+    }
+    #funda4{
+        grid-area: funda4;
+    }
+    
+    .others{
+        grid-area: others;
+        
+        display: grid;
+        grid-template-areas:     
+        "cargador1 cargador1 cargador2 cargador2"
+        "cargador3 cargador3 cargador4 cargador4";
+    }
+    #cargador1{
+        grid-area: cargador1;
+    }
+    #cargador2{
+        grid-area: cargador2;
+    }
+    #cargador3{
+        grid-area: cargador3;
+    }
+    #cargador4{
+        grid-area: cargador4;
+    }
+    /* GRID P/FOOTER */
+    .footer-article-container{
+        grid-area: footer-article-container;
+        display: grid;
+        grid-template-areas:
+        "leyes leyes redes redes" 
+        "mediosDePago mediosDePago contactanos contactanos";
+    }
+
+
+    .leyes{
+        grid-area: leyes;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .mediosDePago{
+        grid-area: mediosDePago;
+    }
+    .contactanos{
+        grid-area: contactanos;
+    }
+     /* GRID P/FOOTER */  
+ }
+ 
+ /* TABLETS */
+ @media (min-width:768px) {
+    
+    
+}
+/* COMPUTADORAS DE ESCRITORIO */
+@media (min-width:1024px) {
+
+    /* GRID */
+    /* GRID P/HEADER */
+    .index-head{
+        grid-area: index-header;
+        display: grid;
+        grid-template-areas:
+        "top-navbar top-navbar top-navbar top-navbar"
+        "nav-bar nav-bar nav-bar nav-bar";
+    }
+
+
+    .top-navbar{
+        grid-area: top-navbar;
+    }
+    .nav-bar{
+        grid-area: nav-bar;
+    }
+
+     /* GRID P/HEADER */
+    /* GRID P/BODY */
+    .celulares{
+        grid-area: celulares;
+        display: grid;
+        grid-template-areas: 
+        "phone1 phone2 phone3 phone4";    
+    }
+    
+    #phone1 {
+        grid-area: phone1;
+    }
+    #phone2 {
+        grid-area: phone2;
+    }
+    #phone3 {
+        grid-area: phone3;
+    }
+    #phone4 {
+        grid-area: phone4;
+    }
+    
+    .accesorios{
+        grid-area: accesorios;
+        display: grid;
+        grid-template-areas:     
+        "funda1 funda2 funda3 funda4";
+    }
+    
+    #funda1{
+        grid-area: funda1;
+    }
+    #funda2{
+        grid-area: funda2;
+    }
+    #funda3{
+        grid-area: funda3;
+    }
+    #funda4{
+        grid-area: funda4;
+    }
+    
+    .others{
+        grid-area: others;
+        
+        display: grid;
+        grid-template-areas:     
+        "cargador1 cargador2 cargador3 cargador4";
+    }
+    #cargador1{
+        grid-area: cargador1;
+    }
+    #cargador2{
+        grid-area: cargador2;
+    }
+    #cargador3{
+        grid-area: cargador3;
+    }
+    #cargador4{
+        grid-area: cargador4;
+    }
+     /* GRID P/BODY */
+      /* GRID P/FOOTER */
+      .footer-article-container{
+        grid-area: footer-article-container;
+        display: grid;
+        grid-template-areas:
+        "leyes redes mediosDePago contactanos";
+    }
+
+
+    .leyes{
+        grid-area: leyes;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .mediosDePago{
+        grid-area: mediosDePago;
+    }
+    .contactanos{
+        grid-area: contactanos;
+    }
+     /* GRID P/FOOTER */ 
+    /* GRID */
+    
+}
