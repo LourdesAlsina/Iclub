@@ -5,13 +5,6 @@
     padding: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-}
 
 
 #titleLog{
@@ -47,11 +40,12 @@ nav {
     margin-right: 15px;
     position: sticky;
     top: 0;
-    display: none;
+    display: flex;
     justify-content: space-between;
     justify-content: space-around;
     margin-left: 20px;
     margin-bottom: 20px;
+
 }
 
 nav a{
@@ -67,27 +61,6 @@ nav :hover{
     border-radius: 15px;
 }
 /* Para que se tiña de color cuando acerque el cursor */
-
-/*---- Burguer menú ----*/
-.burger-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;  
-  }
-#bmenu{
-    margin-bottom: 20px;
-    font-size: 20px;
-    padding: 10px;
-    border: 1px solid  #868485;
-    border-radius: 5px;
-    background-color: #868485;
-    color: white;  
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-  /* ---Burguer menú--- */
 
 .product h2{
     font-family: 'Open Sans', sans-serif;
@@ -175,8 +148,7 @@ p{
     display: grid;
     grid-template-areas:
     "top-navbar top-navbar top-navbar top-navbar"
-    "nav-bar nav-bar nav-bar nav-bar"
-    "burger burger burger burger";    
+    "nav-bar nav-bar nav-bar nav-bar";    
 }
 
 
@@ -186,9 +158,7 @@ p{
 .nav-bar{
     grid-area: nav-bar;
 }
-.burger-div{
-    grid-area: burger;
-}
+
  /* GRID P/HEADER */
 .celulares{
     grid-area: celulares;
@@ -353,9 +323,7 @@ h4{
     margin-left: 80px;
     margin-right: 80px;
 }
- #Marian{
-    margin: auto;
- }
+
 /* PESTAÑA DE SERVICIOS */
 
 .imgService {
@@ -499,7 +467,6 @@ footer i{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
   }
 
   .copyright{
@@ -570,12 +537,8 @@ footer i{
  
  /* TABLETS */
  @media (min-width:768px) {
-    .burger-div{
-        display: none;
-}
-nav { 
-    display: flex;
-}     
+    
+    
 }
 /* COMPUTADORAS DE ESCRITORIO */
 @media (min-width:1024px) {
@@ -584,8 +547,7 @@ nav {
         display: grid;
         grid-template-areas:
         "top-navbar top-navbar top-navbar top-navbar"
-        "nav-bar nav-bar nav-bar nav-bar"
-        "burger burger burger burger";
+        "nav-bar nav-bar nav-bar nav-bar";
     }
 
 
