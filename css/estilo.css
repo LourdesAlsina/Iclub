@@ -148,7 +148,7 @@ p{
     display: grid;
     grid-template-areas:
     "top-navbar top-navbar top-navbar top-navbar"
-    "nav-bar nav-bar nav-bar nav-bar";
+    "nav-bar nav-bar nav-bar nav-bar";    
 }
 
 
@@ -162,12 +162,13 @@ p{
  /* GRID P/HEADER */
 .celulares{
     grid-area: celulares;
+    flex-wrap: nowrap;
     display: grid;
     grid-template-areas: 
     "phone1 phone1 phone1 phone1"
     "phone2 phone2 phone2 phone2"
     "phone3 phone3 phone3 phone3"
-    "phone4 phone4 phone4 phone4";    
+    "phone4 phone4 phone4 phone4";        
 }
 
 #phone1 {
@@ -181,6 +182,15 @@ p{
 }
 #phone4 {
     grid-area: phone4;
+}
+
+.product img{
+    width: auto;
+}
+
+.celulares div{
+    max-width: 90%;
+    justify-content: center;
 }
 
 .accesorios{
@@ -252,6 +262,9 @@ p{
 .contactanos{
     grid-area: contactanos;
 }
+
+
+
  /* GRID P/FOOTER */ 
 /* ---------------- Trabajamos con GRID ----------------*/
 
@@ -377,41 +390,7 @@ h4{
     float: left;
 }
 
-/* NOVEDADES */
 
-.novedades{
-    padding: 15px;
-    text-align: center;
-}
-
-
-.pNovedades{
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.novedades{
-    grid-area: novedades;
-    display: grid;
-    grid-template-areas: 
-    "nov1 nov1 nov2 nov2"
-    "nov1 nov1 nov2 nov2"
-    "nov3 nov3 nov4 nov4"
-    "nov3 nov3 nov4 nov4";    
-}
-
-.nov1 {
-    grid-area: nov1 ;
-}
-.nov2 {
-    grid-area: nov2;
-}
-.nov3 {
-    grid-area: nov3;
-}
-.nov4 {
-    grid-area: nov4;
-}
 
 
 
@@ -473,17 +452,26 @@ footer i{
         padding: auto;    
 }
 
-.footer-article-container{
+/* .footer-article-container{
     display: grid;
     max-width: 90%;
     grid-template-columns: repeat(
       auto-fit,
       minmax( 150px,1fr) ); gap: 16px;
+  } */
+
+
+  .footer-article-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 
   .copyright{
     font-size: 10px;
-    color: black;
+    color: white;
     text-align: center;
   }
 
@@ -503,9 +491,8 @@ footer i{
     z-index: 100;
     transition: all 300ms ease;
  }
-
  
- 
+ /* --------------------MEDIA QUERI PARA PESTAÑA PRODUCTOS--------------------*/
 
  
  /* TABLETS PEQUEÑAS */
@@ -518,19 +505,6 @@ footer i{
         "phone3 phone3 phone4 phone4";    
     }
     
-    #phone1 {
-        grid-area: phone1;
-    }
-    #phone2 {
-        grid-area: phone2;
-    }
-    #phone3 {
-        grid-area: phone3;
-    }
-    #phone4 {
-        grid-area: phone4;
-    }
-    
     .accesorios{
         grid-area: accesorios;
         display: grid;
@@ -538,20 +512,7 @@ footer i{
         "funda1 funda1 funda2 funda2"
         "funda3 funda3 funda4 funda4";
     }
-    
-    #funda1{
-        grid-area: funda1;
-    }
-    #funda2{
-        grid-area: funda2;
-    }
-    #funda3{
-        grid-area: funda3;
-    }
-    #funda4{
-        grid-area: funda4;
-    }
-    
+     
     .others{
         grid-area: others;
         
@@ -560,18 +521,7 @@ footer i{
         "cargador1 cargador1 cargador2 cargador2"
         "cargador3 cargador3 cargador4 cargador4";
     }
-    #cargador1{
-        grid-area: cargador1;
-    }
-    #cargador2{
-        grid-area: cargador2;
-    }
-    #cargador3{
-        grid-area: cargador3;
-    }
-    #cargador4{
-        grid-area: cargador4;
-    }
+    
     /* GRID P/FOOTER */
     .footer-article-container{
         grid-area: footer-article-container;
@@ -582,18 +532,6 @@ footer i{
     }
 
 
-    .leyes{
-        grid-area: leyes;
-    }
-    .redes{
-        grid-area: redes;
-    }
-    .mediosDePago{
-        grid-area: mediosDePago;
-    }
-    .contactanos{
-        grid-area: contactanos;
-    }
      /* GRID P/FOOTER */  
  }
  
@@ -604,9 +542,6 @@ footer i{
 }
 /* COMPUTADORAS DE ESCRITORIO */
 @media (min-width:1024px) {
-
-    /* GRID */
-    /* GRID P/HEADER */
     .index-head{
         grid-area: index-header;
         display: grid;
@@ -616,33 +551,13 @@ footer i{
     }
 
 
-    .top-navbar{
-        grid-area: top-navbar;
-    }
-    .nav-bar{
-        grid-area: nav-bar;
-    }
-
      /* GRID P/HEADER */
     /* GRID P/BODY */
     .celulares{
-        grid-area: celulares;
+        grid-area: celulares;        
         display: grid;
         grid-template-areas: 
-        "phone1 phone2 phone3 phone4";    
-    }
-    
-    #phone1 {
-        grid-area: phone1;
-    }
-    #phone2 {
-        grid-area: phone2;
-    }
-    #phone3 {
-        grid-area: phone3;
-    }
-    #phone4 {
-        grid-area: phone4;
+        "phone1 phone2 phone3 phone4";            
     }
     
     .accesorios{
@@ -652,18 +567,6 @@ footer i{
         "funda1 funda2 funda3 funda4";
     }
     
-    #funda1{
-        grid-area: funda1;
-    }
-    #funda2{
-        grid-area: funda2;
-    }
-    #funda3{
-        grid-area: funda3;
-    }
-    #funda4{
-        grid-area: funda4;
-    }
     
     .others{
         grid-area: others;
@@ -672,18 +575,7 @@ footer i{
         grid-template-areas:     
         "cargador1 cargador2 cargador3 cargador4";
     }
-    #cargador1{
-        grid-area: cargador1;
-    }
-    #cargador2{
-        grid-area: cargador2;
-    }
-    #cargador3{
-        grid-area: cargador3;
-    }
-    #cargador4{
-        grid-area: cargador4;
-    }
+    
      /* GRID P/BODY */
       /* GRID P/FOOTER */
       .footer-article-container{
@@ -693,20 +585,62 @@ footer i{
         "leyes redes mediosDePago contactanos";
     }
 
-
-    .leyes{
-        grid-area: leyes;
-    }
-    .redes{
-        grid-area: redes;
-    }
-    .mediosDePago{
-        grid-area: mediosDePago;
-    }
-    .contactanos{
-        grid-area: contactanos;
-    }
      /* GRID P/FOOTER */ 
     /* GRID */
     
+}
+
+
+/* GRID Y RESPONSIVE PESTAÑA NOVEDADES */
+.novedades{
+    padding: 15px;
+    text-align: center;
+}
+
+
+.pNovedades{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.novedades{
+    grid-area: novedades;
+    display: grid;
+    grid-template-areas: 
+    "nov1 nov1 nov2 nov2"
+    "nov1 nov1 nov2 nov2"
+    "nov3 nov3 nov4 nov4"
+    "nov3 nov3 nov4 nov4"
+    "leyes redes mediosDePago contactanos";    
+}
+
+.nov1 {
+    grid-area: nov1 ;
+}
+.nov2 {
+    grid-area: nov2;
+}
+.nov3 {
+    grid-area: nov3;
+}
+.nov4 {
+    grid-area: nov4;
+}
+
+@media (min-width:350px) {
+    .novedades{
+        grid-area: index-header;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+        "nov1"
+        "nov2"
+        "nov3"
+        "nov4"
+        "leyes"
+        "redes"
+        "mediosDePaog"
+        "contactanos";
+    }
 }
