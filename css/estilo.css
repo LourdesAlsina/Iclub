@@ -89,6 +89,7 @@ nav :hover{
 }
   /* ---Burguer menú--- */
 
+ 
 .product h2{
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -422,6 +423,40 @@ h4{
     float: left;
 }
 
+/* GRID Y RESPONSIVE PESTAÑA NOVEDADES */
+.novedades{
+    padding: 15px;
+    text-align: center;
+}
+
+
+.pNovedades{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.novedades{
+    grid-area: novedades;
+    display: grid;
+    grid-template-areas: 
+    "nov1 nov1 nov2 nov2"
+    "nov1 nov1 nov2 nov2"
+    "nov3 nov3 nov4 nov4"
+    "nov3 nov3 nov4 nov4";        
+}
+
+.nov1 {
+    grid-area: nov1;
+}
+.nov2 {
+    grid-area: nov2;
+}
+.nov3 {
+    grid-area: nov3;
+}
+.nov4{
+    grid-area: nov4;
+}
 
 
 
@@ -501,6 +536,10 @@ footer i{
     gap: 20px;
     
   }
+  footer{
+    min-width: 400px;
+    max-width: 100%;
+  }
 
   .copyright{
     font-size: 10px;
@@ -525,8 +564,21 @@ footer i{
     transition: all 300ms ease;
  }
  
- /* --------------------MEDIA QUERI PARA PESTAÑA PRODUCTOS--------------------*/
+ /* --------------------MEDIA QUERY --------------------*/
 
+ @media (min-width:350px) {
+    .novedades{
+        grid-area: index-header;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+        "nov1 nov1 nov1 nov1"
+        "nov2 nov2 nov2 nov2"
+        "nov3 nov3 nov3 nov3"
+        "nov4 nov4 nov4 nov4";
+    }
+}
  
  /* TABLETS PEQUEÑAS */
  @media (min-width:480px) {
@@ -622,63 +674,17 @@ nav {
         grid-template-areas:
         "leyes redes mediosDePago contactanos";
     }
-
-     /* GRID P/FOOTER */ 
-    /* GRID */
-    
-}
-
-
-/* GRID Y RESPONSIVE PESTAÑA NOVEDADES */
-.novedades{
-    padding: 15px;
-    text-align: center;
-}
-
-
-.pNovedades{
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.novedades{
-    grid-area: novedades;
-    display: grid;
-    grid-template-areas: 
-    "nov1 nov1 nov2 nov2"
-    "nov1 nov1 nov2 nov2"
-    "nov3 nov3 nov4 nov4"
-    "nov3 nov3 nov4 nov4"
-    "leyes redes mediosDePago contactanos";    
-}
-
-.nov1 {
-    grid-area: nov1 ;
-}
-.nov2 {
-    grid-area: nov2;
-}
-.nov3 {
-    grid-area: nov3;
-}
-.nov4 {
-    grid-area: nov4;
-}
-
-@media (min-width:350px) {
     .novedades{
-        grid-area: index-header;
+        grid-area: novedades;
         display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-areas:
-        "nov1"
-        "nov2"
-        "nov3"
-        "nov4"
-        "leyes"
-        "redes"
-        "mediosDePaog"
-        "contactanos";
+        grid-template-areas: 
+        "nov1 nov1 nov2 nov2"
+        "nov1 nov1 nov2 nov2"
+        "nov3 nov3 nov4 nov4"
+        "nov3 nov3 nov4 nov4";    
     }
 }
+
+
+
+
