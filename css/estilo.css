@@ -3,9 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-* {
     box-sizing: border-box;
 }
 
@@ -150,21 +147,20 @@ p{
 /* INDEX */
 .pIndex{
  text-align: left;
- margin-left: 500px;
- margin-right: 500px;
+ /* margin-left: 500px;
+ margin-right: 500px; */
 }
 .video-div{
     display: flex;
     justify-content: center;
     height: 500px;
-    width: auto;
+    width:100%;
     text-align: center;
     
 }
 .video-banner{
     height: 100%;
-    width: auto;
-    
+    width: auto;  
 }
 
 
@@ -395,7 +391,7 @@ h4{
     display: inline-block;
     width: auto;
     height: auto;
-    margin-left: 390px;
+    margin-left: 50px;
     padding: 20px, 20px;
     text-align: justify;
     text-align: center;
@@ -422,6 +418,9 @@ h4{
     height: 150px;
     float: left;
 }
+
+
+
 
 /* GRID Y RESPONSIVE PESTAÑA NOVEDADES */
 .novedades{
@@ -578,10 +577,7 @@ footer i{
         "nov3 nov3 nov3 nov3"
         "nov4 nov4 nov4 nov4";
     }
-}
  
- /* TABLETS PEQUEÑAS */
- @media (min-width:480px) {
     .celulares{
         grid-area: celulares;
         display: grid;
@@ -621,13 +617,21 @@ footer i{
  }
  
  /* TABLETS */
+
  @media (min-width:768px) {
     .burger-div{
         display: none;
-}
-nav { 
+    }
+    nav { 
     display: flex;
-}     
+    } 
+    .comentarios{
+        grid-template-areas: comentarios;
+        display: grid;
+        grid-template-areas: 
+        "caja1 caja2 caja3";
+     }
+      
 }
 /* COMPUTADORAS DE ESCRITORIO */
 @media (min-width:1024px) {

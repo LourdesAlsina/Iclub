@@ -1,10 +1,11 @@
 {
   "name": "clase-1",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/LourdesAlsina/Iclub/issues"
   },
-  "homepage": "https://github.com/LourdesAlsina/Iclub#readme"
+  "homepage": "https://github.com/LourdesAlsina/Iclub#readme",
+  "description": ""
 }
