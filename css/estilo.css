@@ -465,11 +465,20 @@ h4{
 form input{
     border-radius: 5px;
     padding: 10px;
+    width: 50%;
 }
 
 form textarea{
     border-radius: 5px;
     padding: 10px;
+    width: 50%;
+}
+
+#inputB {
+    border-radius: 5px;
+    padding: 10px;
+    width: 35%;
+    cursor: pointer; 
 }
 
 /* FOOTER */
