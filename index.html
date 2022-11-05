@@ -18,26 +18,29 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body class="gridConteiner">
-    <header class="index-head">
-        <div class="top-navbar">
-            <h1 id="titleLog">iClub</h1>   
-        </div> 
+  <header class="index-head">
+    <div class="top-navbar">
+        <h1 id="titleLog">iClub</h1>   
+    </div>
+    <div class="burger-div">
+        <i id="bmenu" class="fa-solid fa-bars"></i>
+    </div>
 
-        <nav class="nav-bar">                        
-            <a href="index.html">Inicio</a>
-            <a href="html/productos.html">Productos</a>
-            <a href="html/servicios.html">Servicios</a>
-            <a href="html/novedades.html">Novedades</a>
-            <a href="html/sobrenosotros.html">Sobre Nosotros</a>
-            <a href="html/contacto.html">Contacto</a>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>  
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </nav>
+    <nav class="nav-bar" id="nav-bar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="html/productos.html">Productos</a></li>
+            <li><a href="html/servicios.html">Servicios</a></li>
+            <li><a href="html/novedades.html">Novedades</a></li>
+            <li><a href="html/sobrenosotros.html">Sobre Nosotros</a></li>
+            <li><a href="html/contacto.html">Contacto</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>  
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>                        
+        
+    </nav>
 
-        <div class="burger-div">
-                <i id="bmenu" class="fa-solid fa-bars"></i>
-         </div>
-    </header>
+</header>
     
 <!-- CARRUSEL CON BOOTSTRAP -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -119,5 +122,25 @@
     </script>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script>
+    const hamburger = document.querySelector("#bmenu");
+    const navBar = document.querySelector("#nav-bar")
+    
+    
+    hamburger.addEventListener("click", mobileMenu);
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+    
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navBar.classList.toggle("active");
+    }
+    
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+</script>
 </body>
 </html>

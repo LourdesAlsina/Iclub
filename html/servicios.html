@@ -19,20 +19,24 @@
     <header class="index-head">
         <div class="top-navbar">
             <h1 id="titleLog">iClub</h1>   
-        </div>           
-        <nav class="nav-bar">                        
-            <a href="../index.html">Inicio</a>
-            <a href="productos.html">Productos</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="novedades.html">Novedades</a>
-            <a href="sobrenosotros.html">Sobre Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>  
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </nav>
+        </div>
         <div class="burger-div">
             <i id="bmenu" class="fa-solid fa-bars"></i>
-     </div>
+        </div>
+
+        <nav class="nav-bar" id="nav-bar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>  
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>                            
+        </nav>
+
     </header>
 
     <img class="imgService" src="/img/fotoPservicios.jpeg" alt="Arreglo de celulares">
@@ -58,12 +62,22 @@
         tengas, tenemos la solución
         para tu iPhonen & iPad.</p>
 
+        <h3>Preguntas frecuentes</h3>
+<div>
+    <ul class="preguntasFrecuentes">
+        <li><a href="servicios.html#bateria">¿Como debo cargar la bateria de mi Iphone?</a></li>
+        <li><a href="servicios.html#domicilio">¿Hacen envios a domilicio?</a></li>
+        <li><a href="servicios.html#garantia">¿Tiene garantía la reparación?</a></li>
+        <li><a href="servicios.html#pantalla">No puedo ver las imagenes, sale todo negro ¿que podrá ser?</a></li>
+    </ul>
+
     <div class="fotoServicio">
         <img src="/img/servicio1.jpeg" alt="Arreglo de celulares" width="500" height="400">
         <img src="/img/foto arreglo 2.jpeg" alt="Cambio de bateria" idth="500" height="400">
     </div>
     <br><br>
     <h3 class="opiniones">Opiniones de nuestros clientes</h3>
+    <br><br>
     
 
 <div class="comentarios">
@@ -76,6 +90,13 @@
     <div class="caja3">
         <p>Manuel Turizo: El mejor lugar! Servicio súper confiable, honestos y muy atentos. La atención que le dan al cliente es algo así como recibir un abrazo de tu abuela</p>
     </div>
+</div>
+<br><br>
+<div class="respuestas">
+    <p id="bateria">¿Como debo cargar la bateria de mi Iphone? Para cargar de manera correcta la Batería del Smartphone, es mejor dejarlo cargando por un periodo de 2 a 3 horas, o hasta que el Smartphone diga carga completa o 100%. Esto debido a que hay algunos smartphones que tienen carga rapida. No le recomendamos cargar su celular toda la noche, porque esto deteriora la vida útil de la batería. Tampoco debe usar cualquier cargador, el voltaje y amperaje estipulados de fabrica son para una carga optima y segura de tu Iphone, en nuestro Local Comercial tenemos cargadores del voltaje y amperaje correctos para tu Smartphone, puedes consultarnos por Whatsapp.</p>
+    <p id="domicilio"> ¿Hacen envios a domilicio? Hacemos envios de compra de Iphones y acceosriso a todo el pais. En cuanto a reparaciones en Salta, por el momento no estamos trabajando con reparación a domicilio, atendemos en nuestro local fisico. </p>
+    <p id="garantia"> ¿Tiene garantía la reparación? Todas nuestras reparaciones tienen un periodo de garantía que se explica a continuación: Centros de carga: 180 días de garantía, si presenta daño físico, humedad o suciedad se invalida la garantía.Micrófonos: 180 días de garantía, siempre que no presente daños por humedad o suciedad como polvo o pelusas en caso contrario quedara invalidada la garantía. Bocinas y Auriculares: 30 días de garantía. Reparaciones en tarjeta lógica: 30 días de garantía. Celulares mojados no tienen garantia.</p>
+    <p id="pantalla"> No puedo ver las imagenes, sale todo negro ¿que podrá ser? Si la pantalla de tu Iphone se ve todo negro pero se escuchan los timbres o sonidos que te hacen pensar que esta funcionando, e incluso te llegan los mensajes o llamadas perdidas entoncesse rompió la pantalla. Por lo general las pantallas que no dan imagen, o presentan fallas son debido a golpes, humedad u otro uso inadecuado del dispositivo. En este caso es absolutamente necesario llevarlo a nuestro Servicio Técnico para reemplazar la Pantalla.</p>
 </div>
 
     <footer>
@@ -116,5 +137,25 @@
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script>
+    const hamburger = document.querySelector("#bmenu");
+    const navBar = document.querySelector("#nav-bar")
+    
+    
+    hamburger.addEventListener("click", mobileMenu);
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+    
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navBar.classList.toggle("active");
+    }
+    
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+</script>
 </body>
 </html>

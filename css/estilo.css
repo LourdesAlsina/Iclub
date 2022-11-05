@@ -49,6 +49,10 @@ nav {
     justify-content: space-around;
     margin-left: 20px;
     margin-bottom: 20px;
+    background-color: #f1f0f1;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
 }
 
 nav a{
@@ -57,15 +61,32 @@ nav a{
     padding: 10px;
 }
 
-nav :hover{
-    background-color: rgb(227, 231, 160);
-    color: rgb(174, 182, 29) ;
-    transition:0.8s;
+nav li :hover{
+    background-color: white;
+    color: black ;
+    transition:0.0s;
     border-radius: 15px;
+}
+nav li{
+    list-style: none;
 }
 /* Para que se tiña de color cuando acerque el cursor */
 
 /*---- Burguer menú ----*/
+
+.active{
+    display: flex;
+    list-style: none;
+    display: inline-block;
+  }
+  
+nav ul li{
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+    padding: 10px;
+}
+
 .burger-div{
     display: flex;
     align-items: center;
@@ -94,6 +115,11 @@ nav :hover{
     font-weight: bold; 
     color: rgb(70, 67, 67);
     padding: 15px;
+}
+.product:hover{
+    border-radius: 50px;
+    box-shadow:  36px 36px 72px grey,
+                 -36px -36px 72px grey;
 }
 
 
@@ -296,25 +322,25 @@ p{
 /* ---------------- Trabajamos con GRID ----------------*/
 
 .product img{
-    width: 350px;
+    width: 100%;
     height: 350px;
 }
 .product{
     text-align: justify;
     text-align: center;
-    border: #c5ced8 8px solid;
-    border-radius: 20px;
-    float: left;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    box-shadow:  36px 36px 72px #d6cece,
+                 -36px -36px 72px #ffffff;
     margin: 20px;
     padding: 20px;
 }
-.product :hover{
-    background-color: rgb(196, 196, 189);
-    transition:0.8s;
-    border-radius: 15px;
-}
+
+
+
 .button {
-    cursor: pointer;;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 h2{
@@ -353,6 +379,30 @@ h4{
  #Marian{
     margin: auto;
  }
+/*SOBRE NOSOTROS*/
+
+.sobre-nosotros{
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    
+}
+
+/*CONTACTO*/
+
+h1{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/*CONTACTO*/
+
+
+
+
+
 /* PESTAÑA DE SERVICIOS */
 
 .imgService {
@@ -397,32 +447,84 @@ h4{
     text-align: center;
     
 }
+
+/* se trabajo con https://neumorphism.io/#fff5f5 */
 .caja1{
-    border: #c5ced8 8px inset;
-    border-radius: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e6dddd, #ffffff);
+    box-shadow:  36px 36px 72px #d6cece,
+             -36px -36px 72px #ffffff;
     width: 350px;
     height: 150px;
     float: left;
 }
 .caja2{
-    border: #c5ced8 8px inset;
-    border-radius: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e6dddd, #ffffff);
+    box-shadow:  36px 36px 72px #d6cece,
+             -36px -36px 72px #ffffff;
     width: 350px;
     height: 150px;
     float: left;
 }
 .caja3{
-    border: #c5ced8 8px inset;
-    border-radius: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e6dddd, #ffffff);
+    box-shadow:  36px 36px 72px #d6cece,
+             -36px -36px 72px #ffffff;
     width: 350px;
     height: 150px;
     float: left;
 }
 
+.preguntasFrecuentes{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff8f8;
+    background-color: #868485;
+}
 
+/*NOVEDADES*/
+.nov1,
+.nov2,
+.nov3,
+.nov4{
+    border-radius: 30px;
+    background-color: rgb(228, 224, 224);
+    padding: 20px;
+}
+.nov1 img,
+.nov2 img,
+.nov3 img,
+.nov4 img{
+    border-radius: 5px;    
+}
 
+.nov1 a,
+.nov2 a,
+.nov3 a,
+.nov4 a{
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+    
+}
+.nov1 a:hover,
+.nov2 a:hover,
+.nov3 a:hover,
+.nov4 a:hover{
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(174, 182, 29);
+    
+}
+
+/*NOVEDADES*/
 
 /* GRID Y RESPONSIVE PESTAÑA NOVEDADES */
+
+
+
+
 .novedades{
     padding: 15px;
     text-align: center;
@@ -436,6 +538,7 @@ h4{
 
 .novedades{
     grid-area: novedades;
+    grid-gap: 40px;
     display: grid;
     grid-template-areas: 
     "nov1 nov1 nov2 nov2"
@@ -628,6 +731,21 @@ footer i{
  /* TABLETS */
 
  @media (min-width:768px) {
+
+    /*nav-bar */
+    header nav{
+        padding: 2% 2% 0% 2%;
+        display: flex;
+        
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    /*nav-bar*/
+
+
     .burger-div{
         display: none;
     }
