@@ -47,17 +47,23 @@ nav {
     display: none;
     justify-content: space-between;
     justify-content: space-around;
-    margin-left: 20px;
     margin-bottom: 20px;
     background-color: #f1f0f1;
     width: 100%;
     margin: 0;
     padding: 10px;
+    position: sticky;
 }
 
 nav a{
     color:#504F4F;
     justify-content: space-between;
+    padding: 10px;
+}
+nav ul li{
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
     padding: 10px;
 }
 
@@ -80,12 +86,6 @@ nav li{
     display: inline-block;
   }
   
-nav ul li{
-    align-items: center;
-    justify-content: center;
-    text-align: center;  
-    padding: 10px;
-}
 
 .burger-div{
     display: flex;
@@ -169,14 +169,12 @@ p{
     padding: 15px;
     text-align: left;
     text-align: justify;  
-    margin-left: 20px; 
+    margin-left: 5%;  
 }
 
 /* INDEX */
 .pIndex{
  text-align: left;
- /* margin-left: 500px;
- margin-right: 500px; */
 }
 .video-div{
     display: flex;
@@ -319,6 +317,10 @@ p{
   /* GRID P/FOOTER */
   .footer-article-container{
     grid-area: footer-article-container;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    text-align: center;
     display: grid;
     grid-template-areas:
     "leyes leyes leyes leyes"
@@ -380,6 +382,7 @@ p{
     color: rgb(12, 12, 12);
 }
 
+
 button {
     cursor: pointer;
     border-radius: 5px;
@@ -393,7 +396,7 @@ h2{
     font-weight: bold; 
     color: rgb(70, 67, 67);
     padding: 15px; 
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 
@@ -402,7 +405,8 @@ h3{
     font-size: 20px;
     font-weight: bold; 
     color: rgb(70, 67, 67);
-    padding: 15px;  
+    padding: 15px; 
+    margin-left: 5%; 
 }
 .opiniones{
     text-align: center;
@@ -413,6 +417,7 @@ h4{
     font-weight: bold; 
     color: rgb(70, 67, 67);
     padding: 15px;
+    margin-left: 5%; 
 }
 
 .sobreNosotros{
@@ -444,9 +449,6 @@ h1{
 /*CONTACTO*/
 
 
-
-
-
 /* PESTAÑA DE SERVICIOS */
 
 .imgService {
@@ -460,7 +462,7 @@ h1{
     color: #504F4F;
     padding: 25px;
     text-align: left; 
-    margin-left: 20px; 
+    margin-left: 5%; 
 }
 .fotoServicio{
     text-align: center;
@@ -483,9 +485,9 @@ h1{
 
 .comentarios{
     display: inline-block;
-    width: auto;
+    width: 50%;
     height: auto;
-    margin-left: 50px;
+    margin-left: 23%;
     padding: 20px, 20px;
     text-align: justify;
     text-align: center;
@@ -498,8 +500,8 @@ h1{
     background: linear-gradient(145deg, #e6dddd, #ffffff);
     box-shadow:  36px 36px 72px #d6cece,
              -36px -36px 72px #ffffff;
-    width: 350px;
-    height: 150px;
+    width: 100%;
+    height: auto;
     float: left;
 }
 .caja2{
@@ -507,8 +509,8 @@ h1{
     background: linear-gradient(145deg, #e6dddd, #ffffff);
     box-shadow:  36px 36px 72px #d6cece,
              -36px -36px 72px #ffffff;
-    width: 350px;
-    height: 150px;
+    width: 100%;
+     height: auto;
     float: left;
 }
 .caja3{
@@ -516,8 +518,8 @@ h1{
     background: linear-gradient(145deg, #e6dddd, #ffffff);
     box-shadow:  36px 36px 72px #d6cece,
              -36px -36px 72px #ffffff;
-    width: 350px;
-    height: 150px;
+     width: 100%;
+    height: auto;
     float: left;
 }
 
@@ -746,23 +748,6 @@ footer i{
         padding: auto;    
 }
 
-/* .footer-article-container{
-    display: grid;
-    max-width: 90%;
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax( 150px,1fr) ); gap: 16px;
-  } */
-
-
-  .footer-article-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    
-  }
   footer{
     min-width: 400px;
     max-width: 100%;
@@ -846,6 +831,17 @@ footer i{
  }
  
  /* TABLETS */
+ @media (min-width:600px) {
+    .comentarios{
+        grid-template-areas: comentarios;
+        display: grid;
+        grid-template-areas: 
+        "caja1" "
+        "caja2"
+        "caja3";
+     }
+      
+}
 
  @media (min-width:768px) {
 
@@ -873,7 +869,8 @@ footer i{
         grid-template-areas: comentarios;
         display: grid;
         grid-template-areas: 
-        "caja1 caja2 caja3";
+        "caja1 caja2"
+        "caja3 caja3";
      }
       
 }
@@ -887,7 +884,12 @@ footer i{
         "nav-bar nav-bar nav-bar nav-bar"
         "burger burger burger burger";
     }
-
+    .comentarios{
+        grid-template-areas: comentarios;
+        display: grid;
+        grid-template-areas: 
+        "caja1 caja2 caja3";
+     }
 
      /* GRID P/HEADER */
     /* GRID P/BODY */
