@@ -214,7 +214,30 @@ p{
 .burger-div{
     grid-area: burger;
 }
- /* GRID P/HEADER */
+ 
+
+/* GRID P/producto */
+
+
+/* GRID P/producto */
+.product{
+    grid-area: product;    
+    display: grid;
+    grid-template-areas: 
+    "imagen imagen imagen imagen"
+    "datos datos datos datos";        
+}
+.datos{
+    grid-area: datos;
+}
+.prodImg{
+    grid-area: imagen;
+}
+
+
+/* GRID P/HEADER */
+
+
 .celulares{
     grid-area: celulares;
     flex-wrap: nowrap;
@@ -323,19 +346,25 @@ p{
  /* GRID P/FOOTER */ 
 /* ---------------- Trabajamos con GRID ----------------*/
 
-.product img{
+
+.prodImg{
     width: 100%;
     height: 50%;
 }
 .product{
-    text-align: justify;
+    justify-content: space-between;
     text-align: center;
     border-radius: 10px;
-    background: linear-gradient(145deg, #ffffff, #ffffff);
+    border: solid grey 1px;
     box-shadow:  36px 36px 72px #d6cece,
                  -36px -36px 72px #ffffff;
     margin: 5%;
     padding: 5%;
+    height: auto;
+    width: 90%;
+}
+.img0{
+    width: 100%;
 }
 
 #colorGreen{
@@ -350,10 +379,11 @@ p{
 #colorDark{
     color: rgb(12, 12, 12);
 }
-.button {
+
+button {
     cursor: pointer;
     border-radius: 5px;
-    padding: 0,5%;
+    padding: 2%;
     margin-bottom: 0,5%;
 }
 
