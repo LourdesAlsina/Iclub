@@ -76,6 +76,8 @@ nav li :hover{
 nav li{
     list-style: none;
 }
+
+/* VISTA DETALLE DE PRODUCTO */
 /* Para que se tiña de color cuando acerque el cursor */
 
 /*---- Burguer menú ----*/
@@ -191,6 +193,25 @@ p{
 
 
 /* ---------------- Trabajamos con GRID ----------------*/
+
+
+/* GRID PARA PRODUCT DETAIL*/
+
+.iphonehtml{
+    grid-area: iphonehtml;
+    display: grid;    
+    grid-template-areas: 
+    "imgIphone imgIphone descriptionIphone descriptionIphone"
+    "imgIphone imgIphone descriptionIphone descriptionIphone";
+}
+.imgIphone{
+    grid-area: imgIphone;           
+}
+.descriptionIphone{
+    grid-area: descriptionIphone;    
+}
+
+/* GRID PARA PRODUCT DETAIL*/
 
 /* GRID P/HEADER */
 .index-head{
@@ -702,6 +723,76 @@ form textarea{
     font-weight: 600
 }
 
+/* PRODUCT DETAIL */
+.h2-prod-detail{
+    font-size: 30px;
+    color: black ;
+    
+}
+
+.caract-producto > li{
+    margin: 2%;
+}
+
+.iphonehtml{
+    background-color: #b1adaf;
+
+}
+.caja-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: 10%;
+    background-color: #dbd6d8;
+    border-radius: 20px;
+    height: 60%;
+    width: 50%;    
+}
+
+.descriptionIphone{
+ margin-top: 15%;   
+}
+.imgIphone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;        
+}
+
+.imgIphone img{
+    width: 60%;
+    height: 90%;
+    border-radius: 10px;    
+}
+
+.comprar-button:hover,
+.volver-button:hover{
+    background-color: rgb(172, 169, 169);
+    color: white;    
+}
+
+.comprar-button{
+    margin-top: 10px;
+    align-items: center;
+    padding: 10px;
+
+}
+.volver-button a:hover{
+    color: white;
+}
+.volver-button a{
+    color: black;
+}
+.volver-button{
+    margin-top: 10px;
+    background-color: white;    
+    padding: 10PX;
+    margin-left: 5%;
+}
+
+
+/* PRODUCT DETAIL */
+
 /* FOOTER */
 footer h3{
     padding: 15px;
@@ -933,8 +1024,9 @@ footer i{
         "nov3 nov3 nov4 nov4"
         "nov3 nov3 nov4 nov4";    
     }
+    
+    
 }
-
 
 
 
