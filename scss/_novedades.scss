@@ -56,3 +56,13 @@
   .nov4 {
     grid-area: nov4;
   }
+
+
+  .imgNov {
+    obJect-fit: cover;
+    transition: transform 400ms;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+  }

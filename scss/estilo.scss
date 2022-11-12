@@ -8,3 +8,34 @@
 @import "contacto";
 @import "login";
 @import "media";
+
+
+#titleLog{
+    font-family: 'Rammetto One', cursive;
+    color:#504F4F;
+    padding: 80px;    
+    text-align: center;
+    font-size: 80px;
+
+}
+
+@mixin letter {
+    font-family: 'Open Sans', sans-serif;
+    color: #504F4F;
+}
+h1 {
+    color: #504F4F;
+    padding: 15px;
+  }
+  
+  p {
+    display: flex;
+    justify-content: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #504F4F;
+    padding: 15px;
+    text-align: left;
+    text-align: justify;
+    margin-left: 5%;
+  }
+  
