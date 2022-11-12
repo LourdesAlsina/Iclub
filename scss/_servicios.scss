@@ -1,0 +1,65 @@
+.imgService {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .lista {
+    font-family: 'Open Sans', sans-serif;
+    color: #504F4F;
+    padding: 25px;
+    text-align: left;
+    margin-left: 5%;
+  }
+  
+  .fotoServicio {
+    text-align: center;
+  }
+  .formulario{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold; 
+    color: rgb(70, 67, 67);
+    text-align: center;
+    background-image: url(/img/Diseño\ sin\ título\ \(2\).jpg) ;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    text-align: center;
+    margin-left: 25%;
+
+}
+
+  
+  .comentarios {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    margin-left: 23%;
+    padding: 20px, 20px;
+    text-align: justify;
+    text-align: center;
+  }
+  
+  /* se trabajo con https://neumorphism.io/#fff5f5 */
+  
+  .caja1, .caja2, .caja3 {
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e6dddd, #ffffff);
+    box-shadow: 36px 36px 72px #d6cece, -36px -36px 72px #ffffff;
+    width: 100%;
+    height: auto;
+    float: left;
+  }
+  
+  .preguntasFrecuentes {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff8f8;
+    background-color: #868485;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .respuestas {
+    margin-left: 5%;
+    margin-right: 5%;
+  }

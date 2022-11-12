@@ -1,0 +1,266 @@
+.product {
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(70, 67, 67);
+      padding: 15px;
+    }
+  
+    &:hover {
+      border-radius: 50px;
+      box-shadow: 36px 36px 72px grey, -36px -36px 72px grey;
+    }
+  }
+
+  /*GRID*/
+  .iphonehtml {
+    grid-area: iphonehtml;
+    display: grid;
+    grid-template-areas: "imgIphone imgIphone descriptionIphone descriptionIphone" "imgIphone imgIphone descriptionIphone descriptionIphone";
+  }
+  
+  .imgIphone {
+    grid-area: imgIphone;
+  }
+  
+  .descriptionIphone {
+    grid-area: descriptionIphone;
+  }
+  
+  /* GRID PARA PRODUCT DETAIL*/
+  
+  /* GRID P/HEADER */
+  
+  .index-head {
+    grid-area: index-header;
+    display: grid;
+    grid-template-areas: "top-navbar top-navbar top-navbar top-navbar" "nav-bar nav-bar nav-bar nav-bar" "burger burger burger burger";
+  }
+  
+  .top-navbar {
+    grid-area: top-navbar;
+  }
+  
+  .nav-bar {
+    grid-area: nav-bar;
+  }
+  
+  .burger-div {
+    grid-area: burger;
+  }
+  
+  /* GRID P/producto */
+  
+  /* GRID P/producto */
+  
+  .product {
+    grid-area: product;
+    display: grid;
+    grid-template-areas: "imagen imagen imagen imagen" "datos datos datos datos";
+  }
+  
+  .datos {
+    grid-area: datos;
+  }
+  
+  .prodImg {
+    grid-area: imagen;
+  }
+  
+  /* GRID P/HEADER */
+  
+  .celulares {
+    grid-area: celulares;
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-areas: "phone1 phone1 phone1 phone1" "phone2 phone2 phone2 phone2" "phone3 phone3 phone3 phone3" "phone4 phone4 phone4 phone4";
+  }
+  
+  #phone1 {
+    grid-area: phone1;
+  }
+  
+  #phone2 {
+    grid-area: phone2;
+  }
+  
+  #phone3 {
+    grid-area: phone3;
+  }
+  
+  #phone4 {
+    grid-area: phone4;
+  }
+  
+  .product img {
+    width: auto;
+  }
+  
+  .celulares div {
+    max-width: 90%;
+    justify-content: center;
+  }
+  
+  .accesorios {
+    grid-area: accesorios;
+    display: grid;
+    grid-template-areas: "funda1 funda1 funda1 funda1" "funda2 funda2 funda2 funda2" "funda3 funda3 funda3 funda3" "funda4 funda4 funda4 funda4";
+  }
+  
+  #funda1 {
+    grid-area: funda1;
+  }
+  
+  #funda2 {
+    grid-area: funda2;
+  }
+  
+  #funda3 {
+    grid-area: funda3;
+  }
+  
+  #funda4 {
+    grid-area: funda4;
+  }
+  
+  .others {
+    grid-area: others;
+    display: grid;
+    grid-template-areas: "cargador1 cargador1 cargador1 cargador1" "cargador2 cargador2 cargador2 cargador2" "cargador3 cargador3 cargador3 cargador3" "cargador4 cargador4 cargador4 cargador4";
+  }
+  
+  #cargador1 {
+    grid-area: cargador1;
+  }
+  
+  #cargador2 {
+    grid-area: cargador2;
+  }
+  
+  #cargador3 {
+    grid-area: cargador3;
+  }
+  
+  #cargador4 {
+    grid-area: cargador4;
+  }
+  .prodImg {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .product {
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 10px;
+    border: solid grey 1px;
+    box-shadow: 36px 36px 72px #d6cece, -36px -36px 72px #ffffff;
+    margin: 5%;
+    padding: 5%;
+    height: auto;
+    width: 90%;
+  }
+  
+  .img0 {
+    width: 100%;
+  }
+  
+  #colorGreen {
+    color: rgb(9, 63, 9);
+  }
+  
+  #colorRed {
+    color: rgb(139, 55, 55);
+  }
+  
+  #colorBlue {
+    color: rgb(17, 17, 82);
+  }
+  
+  #colorDark {
+    color: rgb(12, 12, 12);
+  }
+  
+  button {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 0,5%;
+  }
+
+
+  /*PRODUCT DETAILS*/
+  .h2-prod-detail {
+    font-size: 30px;
+    color: black;
+  }
+  
+  .caract-producto > li {
+    margin: 2%;
+  }
+  
+  .iphonehtml {
+    background-color: #b1adaf;
+  }
+  
+  .caja-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    background-color: #dbd6d8;
+    border-radius: 20px;
+    height: 60%;
+    width: 50%;
+  }
+  
+  .descriptionIphone {
+    margin-top: 15%;
+  }
+  
+  .imgIphone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  
+    img {
+      width: 60%;
+      height: 90%;
+      border-radius: 10px;
+      obJect-fit: cover;
+      transition: transform 400ms;
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  
+  .comprar-button:hover, .volver-button:hover {
+    background-color: rgb(172, 169, 169);
+    color: white;
+  }
+  
+  .comprar-button {
+    margin-top: 10px;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .volver-button {
+    a {
+      &:hover {
+        color: white;
+      }
+  
+      color: black;
+    }
+  
+    margin-top: 10px;
+    background-color: white;
+    padding: 10PX;
+    margin-left: 5%;
+  }

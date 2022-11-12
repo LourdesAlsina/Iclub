@@ -1,0 +1,101 @@
+/* GRID P/FOOTER */
+
+.footer-article-container {
+    grid-area: footer-article-container;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "leyes leyes leyes leyes" "redes redes redes redes" "mediosDePago mediosDePago mediosDePago mediosDePago" "contactanos contactanos contactanos contactanos";
+  }
+  
+  .leyes {
+    grid-area: leyes;
+  }
+  
+  .redes {
+    grid-area: redes;
+  }
+  
+  .mediosDePago {
+    grid-area: mediosDePago;
+  }
+  
+  .contactanos {
+    grid-area: contactanos;
+  }
+
+  footer h3 {
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+  
+  footer {
+    background-color: #868485;
+    color: white;
+    padding: 20px 5%;
+    margin-top: 25px;
+  }
+  
+  .leyes {
+    margin: 20px 0px;
+    padding: 20px;
+    text-align: left;
+    font-size: smaller !important;
+  }
+  
+  footer i {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  #logocontacto {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .redes {
+    text-align: center;
+    padding: auto;
+  }
+  
+  footer {
+    min-width: 400px;
+    max-width: 100%;
+  }
+  
+  .copyright {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  .boton {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: green;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
+    z-index: 100;
+    transition: all 300ms ease;
+  }

@@ -1,1032 +1,872 @@
-/* TITULO Y BARRA DE NAVEGACIÓN */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+.carrusel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-img {
-    max-width: 100%;
+.carruselFotos {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+.carruselFotos img {
+  width: 1400px;
+  height: 650px;
+  object-fit: contain;
 }
 
-
-#titleLog{
-    font-family: 'Rammetto One', cursive;
-    color:#504F4F;
-    padding: 80px;    
-    text-align: center;
-    font-size: 80px;
-
-}
-.iconsNav{
-    text-align: right;
-    padding: 80px;
-    font-size: 20px;
-    color:#504F4F;
-}
-
-
-.index-head{
-    background-color:white;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    margin-top: -80px;
-    padding-top: 0%;
-
-  }
-nav {
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    text-align:left; font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 15px;
-    position: sticky;
-    top: 0;
-    display: none;
-    justify-content: space-between;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    background-color: #f1f0f1;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    position: sticky;
-}
-
-nav a{
-    color:#504F4F;
-    justify-content: space-between;
-    padding: 10px;
-}
-nav ul li{
-    align-items: center;
-    justify-content: center;
-    text-align: center;  
-    padding: 10px;
-}
-
-nav li :hover{
-    background-color: white;
-    color: black ;
-    transition:0.0s;
-    border-radius: 15px;
-}
-nav li{
-    list-style: none;
-}
-
-/* VISTA DETALLE DE PRODUCTO */
-/* Para que se tiña de color cuando acerque el cursor */
-
-/*---- Burguer menú ----*/
-
-.active{
-    display: flex;
-    list-style: none;
-    display: inline-block;
-  }
-  
-
-.burger-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;  
-  }
-#bmenu{
-    margin-bottom: 20px;
-    font-size: 20px;
-    padding: 10px;
-    border: 1px solid  #868485;
-    border-radius: 5px;
-    background-color: #868485;
-    color: white;  
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-
-  /* ---Burguer menú--- */
-
- 
-.product h2{
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold; 
-    color: rgb(70, 67, 67);
-    padding: 15px;
-}
-.product:hover{
-    border-radius: 50px;
-    box-shadow:  36px 36px 72px grey,
-                 -36px -36px 72px grey;
-}
-
-
-
-/* BODY */
-
-.carrusel ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.carruselFotos img{
-    width: 1400px;
-    height: 650px;
-    object-fit: contain;
-}
-.carruselFotos{
-    display: flex;
-    gap: 10px;
-    overflow: auto;
-}
 /* Gap para separar las fotos entre si - Overflor para la barra del carrusel*/
-.carruselMenu{
-    display: none;
+.carruselMenu {
+  display: none;
 }
 
-.parrafoGeneral{
-  color: #504F4F;  
+.parrafoGeneral {
+  color: #504F4F;
   text-align: start;
   padding: 15px;
 }
 
-
-h1{
-    color: #504F4F;
-    padding: 15px;
+h1 {
+  color: #504F4F;
+  padding: 15px;
 }
 
-p{
-    display: flex;
-    justify-content: left;
-    font-family: 'Open Sans', sans-serif;
-    color: #504F4F;
-    padding: 15px;
-    text-align: left;
-    text-align: justify;  
-    margin-left: 5%;  
+p {
+  display: flex;
+  justify-content: left;
+  font-family: "Open Sans", sans-serif;
+  color: #504F4F;
+  padding: 15px;
+  text-align: left;
+  text-align: justify;
+  margin-left: 5%;
 }
 
 /* INDEX */
-.pIndex{
- text-align: left;
+.pIndex {
+  text-align: left;
 }
-.video-div{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width:100%;
-    text-align: center;
-    
-}
-.video-banner{
-    height: 100%;
-    width: 50%;  
-}
-
-
-/* ---------------- Trabajamos con GRID ----------------*/
-
-
-/* GRID PARA PRODUCT DETAIL*/
-
-.iphonehtml{
-    grid-area: iphonehtml;
-    display: grid;    
-    grid-template-areas: 
-    "imgIphone imgIphone descriptionIphone descriptionIphone"
-    "imgIphone imgIphone descriptionIphone descriptionIphone";
-}
-.imgIphone{
-    grid-area: imgIphone;           
-}
-.descriptionIphone{
-    grid-area: descriptionIphone;    
-}
-
-/* GRID PARA PRODUCT DETAIL*/
-
-/* GRID P/HEADER */
-.index-head{
-    grid-area: index-header;
-    display: grid;
-    grid-template-areas:
-    "top-navbar top-navbar top-navbar top-navbar"
-    "nav-bar nav-bar nav-bar nav-bar"
-    "burger burger burger burger";    
-}
-
-
-.top-navbar{
-    grid-area: top-navbar;
-}
-.nav-bar{
-    grid-area: nav-bar;
-}
-.burger-div{
-    grid-area: burger;
-}
- 
-
-/* GRID P/producto */
-
-
-/* GRID P/producto */
-.product{
-    grid-area: product;    
-    display: grid;
-    grid-template-areas: 
-    "imagen imagen imagen imagen"
-    "datos datos datos datos";        
-}
-.datos{
-    grid-area: datos;
-}
-.prodImg{
-    grid-area: imagen;
-}
-
-
-/* GRID P/HEADER */
-
-
-.celulares{
-    grid-area: celulares;
-    flex-wrap: nowrap;
-    display: grid;
-    grid-template-areas: 
-    "phone1 phone1 phone1 phone1"
-    "phone2 phone2 phone2 phone2"
-    "phone3 phone3 phone3 phone3"
-    "phone4 phone4 phone4 phone4";        
-}
-
-#phone1 {
-    grid-area: phone1;
-}
-#phone2 {
-    grid-area: phone2;
-}
-#phone3 {
-    grid-area: phone3;
-}
-#phone4 {
-    grid-area: phone4;
-}
-
-.product img{
-    width: auto;
-}
-
-.celulares div{
-    max-width: 90%;
-    justify-content: center;
-}
-
-.accesorios{
-    grid-area: accesorios;
-    display: grid;
-    grid-template-areas:     
-    "funda1 funda1 funda1 funda1"
-    "funda2 funda2 funda2 funda2"
-    "funda3 funda3 funda3 funda3"
-    "funda4 funda4 funda4 funda4";
-}
-
-#funda1{
-    grid-area: funda1;
-}
-#funda2{
-    grid-area: funda2;
-}
-#funda3{
-    grid-area: funda3;
-}
-#funda4{
-    grid-area: funda4;
-}
-
-.others{
-    grid-area: others;
-    
-    display: grid;
-    grid-template-areas:     
-    "cargador1 cargador1 cargador1 cargador1"
-    "cargador2 cargador2 cargador2 cargador2"
-    "cargador3 cargador3 cargador3 cargador3"
-    "cargador4 cargador4 cargador4 cargador4";
-}
-#cargador1{
-    grid-area: cargador1;
-}
-#cargador2{
-    grid-area: cargador2;
-}
-#cargador3{
-    grid-area: cargador3;
-}
-#cargador4{
-    grid-area: cargador4;
-}
-  /* GRID P/FOOTER */
-  .footer-article-container{
-    grid-area: footer-article-container;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    display: grid;
-    grid-template-areas:
-    "leyes leyes leyes leyes"
-    "redes redes redes redes"
-    "mediosDePago mediosDePago mediosDePago mediosDePago"
-    "contactanos contactanos contactanos contactanos";
-}
-
-
-.leyes{
-    grid-area: leyes;
-}
-.redes{
-    grid-area: redes;
-}
-.mediosDePago{
-    grid-area: mediosDePago;
-}
-.contactanos{
-    grid-area: contactanos;
-}
-
-
-
- /* GRID P/FOOTER */ 
-/* ---------------- Trabajamos con GRID ----------------*/
-
-
-.prodImg{
-    width: 100%;
-    height: 50%;
-}
-.product{
-    justify-content: space-between;
-    text-align: center;
-    border-radius: 10px;
-    border: solid grey 1px;
-    box-shadow:  36px 36px 72px #d6cece,
-                 -36px -36px 72px #ffffff;
-    margin: 5%;
-    padding: 5%;
-    height: auto;
-    width: 90%;
-}
-.img0{
-    width: 100%;
-}
-
-#colorGreen{
-    color: rgb(9, 63, 9);
-}
-#colorRed{
-    color: rgb(139, 55, 55);
-}
-#colorBlue{
-    color: rgb(17, 17, 82);
-}
-#colorDark{
-    color: rgb(12, 12, 12);
-}
 
-
-button {
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 2%;
-    margin-bottom: 0,5%;
-}
-
-h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: bold; 
-    color: rgb(70, 67, 67);
-    padding: 15px; 
-    margin-left: 5%;
-}
-
-
-h3{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: bold; 
-    color: rgb(70, 67, 67);
-    padding: 15px; 
-    margin-left: 5%; 
-}
-.opiniones{
-    text-align: center;
-}
-h4{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    font-weight: bold; 
-    color: rgb(70, 67, 67);
-    padding: 15px;
-    margin-left: 5%; 
-}
-
-.sobreNosotros{
-    text-align: center;
-    margin-left: 80px;
-    margin-right: 80px;
-}
- #Marian{
-    margin: auto;
- }
-/*SOBRE NOSOTROS*/
-
-.sobre-nosotros{
-    align-items: center;
-    justify-content: center;
-    text-align: center;    
-    
-}
-
-/*CONTACTO*/
-
-h1{
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-}
-
-
-/*CONTACTO*/
-
-
-/* PESTAÑA DE SERVICIOS */
-
-.imgService {
-    width: 100%;
-    height: 80vh;
-}
-
-
-.lista{
-    font-family: 'Open Sans', sans-serif;
-    color: #504F4F;
-    padding: 25px;
-    text-align: left; 
-    margin-left: 5%; 
-}
-.fotoServicio{
-    text-align: center;
-}
-
-.formulario{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: bold; 
-    color: rgb(70, 67, 67);
-    text-align: center;
-    background-image: url(/img/Diseño\ sin\ título\ \(2\).jpg) ;
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    text-align: center;
-    margin-left: 25%;
-
-}
-
-.comentarios{
-    display: inline-block;
-    width: 50%;
-    height: auto;
-    margin-left: 23%;
-    padding: 20px, 20px;
-    text-align: justify;
-    text-align: center;
-    
-}
-
-/* se trabajo con https://neumorphism.io/#fff5f5 */
-.caja1{
-    border-radius: 10px;
-    background: linear-gradient(145deg, #e6dddd, #ffffff);
-    box-shadow:  36px 36px 72px #d6cece,
-             -36px -36px 72px #ffffff;
-    width: 100%;
-    height: auto;
-    float: left;
-}
-.caja2{
-    border-radius: 10px;
-    background: linear-gradient(145deg, #e6dddd, #ffffff);
-    box-shadow:  36px 36px 72px #d6cece,
-             -36px -36px 72px #ffffff;
-    width: 100%;
-     height: auto;
-    float: left;
-}
-.caja3{
-    border-radius: 10px;
-    background: linear-gradient(145deg, #e6dddd, #ffffff);
-    box-shadow:  36px 36px 72px #d6cece,
-             -36px -36px 72px #ffffff;
-     width: 100%;
-    height: auto;
-    float: left;
-}
-
-.preguntasFrecuentes{
-    font-family: 'Open Sans', sans-serif;
-    color: #fff8f8;
-    background-color: #868485;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.respuestas{
-    margin-left: 5%;
-    margin-right: 5%
+.video-div {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
-/*NOVEDADES*/
-.nov1,
-.nov2,
-.nov3,
-.nov4{
-    border-radius: 30px;
-    background-color: rgb(228, 224, 224);
-    padding: 20px;
+.video-banner {
+  height: 100%;
+  width: 50%;
 }
-.nov1 img,
-.nov2 img,
-.nov3 img,
-.nov4 img{
-    border-radius: 5px;    
-}
 
-.nov1 a,
-.nov2 a,
-.nov3 a,
-.nov4 a{
-    font-size: 20px;
-    font-style: italic;
-    color: black;
-    
-}
-.nov1 a:hover,
-.nov2 a:hover,
-.nov3 a:hover,
-.nov4 a:hover{
-    font-size: 20px;
-    font-style: italic;
-    color: rgb(174, 182, 29);
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/*NOVEDADES*/
-
-/* GRID Y RESPONSIVE PESTAÑA NOVEDADES */
-
-
-
 
-.novedades{
-    padding: 15px;
-    text-align: center;
+img {
+  max-width: 100%;
 }
 
+#titleLog {
+  font-family: "Rammetto One", cursive;
+  color: #504F4F;
+  padding: 80px;
+  text-align: center;
+  font-size: 80px;
+}
 
-.pNovedades{
-    margin-left: 80px;
-    margin-right: 80px;
+.iconsNav {
+  text-align: right;
+  padding: 80px;
+  font-size: 20px;
+  color: #504F4F;
 }
 
-.novedades{
-    grid-area: novedades;
-    grid-gap: 40px;
-    display: grid;
-    grid-template-areas: 
-    "nov1 nov1 nov2 nov2"
-    "nov1 nov1 nov2 nov2"
-    "nov3 nov3 nov4 nov4"
-    "nov3 nov3 nov4 nov4";        
+.index-head {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin-top: -80px;
+  padding-top: 0%;
 }
-
-.nov1 {
-    grid-area: nov1;
-}
-.nov2 {
-    grid-area: nov2;
-}
-.nov3 {
-    grid-area: nov3;
-}
-.nov4{
-    grid-area: nov4;
-}
-
-
-
-
-/* FORMULARIO */
 
-form input{
-    border-radius: 5px;
-    padding: 10px;
-    width: 50%;
+nav {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 15px;
+  position: sticky;
+  top: 0;
+  display: none;
+  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  background-color: #f1f0f1;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  position: sticky;
 }
 
-form textarea{
-    border-radius: 5px;
-    padding: 10px;
-    width: 50%;
+nav a {
+  color: #504F4F;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-#inputB {
-    border-radius: 5px;
-    padding: 10px;
-    width: 35%;
-    cursor: pointer; 
+nav ul li {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
 }
 
-
-/* LOGIN */
-
-
-.login-main{
-    margin: 30px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/img/fondo\ login2.jpg);
-    background-size: cover;
+nav li :hover {
+  background-color: white;
+  color: black;
+  transition: 0s;
+  border-radius: 15px;
 }
-.login-card{
-    width: 100%;
-    padding: 70PX 30PX 44px;
-    border-radius: 24px;
-    background-color: #b6b1b3;
-    text-align: center;
-    justify-content: center;
-    align-items: center;    
 
+nav li {
+  list-style: none;
 }
 
-/* el signo > significa que es hijo */
-.login-card > h2{
-    margin: 0 0 12px;
-    font-size: 36px;
-    font-weight: 600;
-}
-.login-card > h2{
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    text-align: center;
-    color:rgb(255, 255, 255);
-    text-shadow: 0 0 5px whitesmoke,
-    0 0 10px whitesmoke, 0 0 15px grey,
-    0 0 20px grey, 0 0 25px grey,
-    0 0 30px grey, 0 0 35px grey;
+/*---- Burguer menú ----*/
+.active {
+  display: flex;
+  list-style: none;
+  display: inline-block;
 }
-.login-form {
-    width: 100%;
-    margin: 0;
-    display: grid;
-    gap: 16px;
-}
-.login-form > a {color: #e9ecf0;}
-.login-form > input, 
-.login-form > button {
-    width: 100%;
-    height: 56px;
-    padding: 0 16px;
-    border-radius: 8px;
-}
-.login-form > input {
-    border: 2px solid #ebebeb;
-}
-.login-form > button {
-    width: 100%;
-    height: 56px;
-    border: 0;
-    background: #e9ecf0;
-    color: gray;
-    font-weight: 600
-}
 
-/* PRODUCT DETAIL */
-.h2-prod-detail{
-    font-size: 30px;
-    color: black ;
-    
+.burger-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.caract-producto > li{
-    margin: 2%;
+#bmenu {
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #868485;
+  border-radius: 5px;
+  background-color: #868485;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
-.iphonehtml{
-    background-color: #b1adaf;
 
+/* ---Burguer menú--- */
+/* GRID P/FOOTER */
+.footer-article-container {
+  grid-area: footer-article-container;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-areas: "leyes leyes leyes leyes" "redes redes redes redes" "mediosDePago mediosDePago mediosDePago mediosDePago" "contactanos contactanos contactanos contactanos";
 }
-.caja-imagen{
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    margin: 10%;
-    background-color: #dbd6d8;
-    border-radius: 20px;
-    height: 60%;
-    width: 50%;    
-}
 
-.descriptionIphone{
- margin-top: 15%;   
-}
-.imgIphone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;        
+.leyes {
+  grid-area: leyes;
 }
 
-.imgIphone img{
-    width: 60%;
-    height: 90%;
-    border-radius: 10px;    
+.redes {
+  grid-area: redes;
 }
 
-.comprar-button:hover,
-.volver-button:hover{
-    background-color: rgb(172, 169, 169);
-    color: white;    
+.mediosDePago {
+  grid-area: mediosDePago;
 }
 
-.comprar-button{
-    margin-top: 10px;
-    align-items: center;
-    padding: 10px;
-
-}
-.volver-button a:hover{
-    color: white;
+.contactanos {
+  grid-area: contactanos;
 }
-.volver-button a{
-    color: black;
-}
-.volver-button{
-    margin-top: 10px;
-    background-color: white;    
-    padding: 10PX;
-    margin-left: 5%;
-}
 
-
-/* PRODUCT DETAIL */
-
-/* FOOTER */
-footer h3{
-    padding: 15px;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold; 
-    color:white;
+footer h3 {
+  padding: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
 }
-
-a{
-    text-decoration: none;
-    color:white; 
-    font-size: 15px;
 
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
 }
 
 footer {
-        background-color: #868485;
-        color:white;
-        padding: 20px 5%;
-        margin-top: 25px;     
+  background-color: #868485;
+  color: white;
+  padding: 20px 5%;
+  margin-top: 25px;
 }
 
-.leyes{
-    margin: 20px 0px;
-    padding: 20px;
-    text-align: left;
-    font-size: smaller !important
+.leyes {
+  margin: 20px 0px;
+  padding: 20px;
+  text-align: left;
+  font-size: smaller !important;
 }
 
-footer i{
-    font-size: 1em;
-    margin-bottom: 10px;
-    color:white;
-  }
-  #logocontacto{
-    font-size: 2em;
-    margin-bottom: 10px;
-    color:white;
-  }
-.redes{
-        text-align: center;  
-        padding: auto;    
+footer i {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: white;
 }
 
-  footer{
-    min-width: 400px;
-    max-width: 100%;
-  }
-
-  .copyright{
-    font-size: 10px;
-    color: white;
-    text-align: center;
-  }
-
- .boton {
-    position:fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
-    background: green;
-    color: white;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 3);
-    z-index: 100;
-    transition: all 300ms ease;
- }
- 
- /* --------------------MEDIA QUERY --------------------*/
-
- @media (min-width:350px) {
-    .novedades{
-        grid-area: index-header;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-areas:
-        "nov1 nov1 nov1 nov1"
-        "nov2 nov2 nov2 nov2"
-        "nov3 nov3 nov3 nov3"
-        "nov4 nov4 nov4 nov4";
-    }
- 
-    .celulares{
-        grid-area: celulares;
-        display: grid;
-        grid-template-areas: 
-        "phone1 phone1 phone2 phone2"
-        "phone3 phone3 phone4 phone4";    
-    }
-    
-    .accesorios{
-        grid-area: accesorios;
-        display: grid;
-        grid-template-areas:     
-        "funda1 funda1 funda2 funda2"
-        "funda3 funda3 funda4 funda4";
-    }
-     
-    .others{
-        grid-area: others;
-        
-        display: grid;
-        grid-template-areas:     
-        "cargador1 cargador1 cargador2 cargador2"
-        "cargador3 cargador3 cargador4 cargador4";
-    }
-    
-    /* GRID P/FOOTER */
-    .footer-article-container{
-        grid-area: footer-article-container;
-        display: grid;
-        grid-template-areas:
-        "leyes leyes redes redes" 
-        "mediosDePago mediosDePago contactanos contactanos";
-    }
-    .login-card{
-        margin: 0;
-        width: 400px;
-    }  
- }
- 
- /* TABLETS */
- @media (min-width:600px) {
-    .comentarios{
-        grid-template-areas: comentarios;
-        display: grid;
-        grid-template-areas: 
-        "caja1" "
-        "caja2"
-        "caja3";
-     }
-      
+#logocontacto {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: white;
 }
 
- @media (min-width:768px) {
+.redes {
+  text-align: center;
+  padding: auto;
+}
 
-    /*nav-bar */
-    header nav{
-        padding: 2% 2% 0% 2%;
-        display: flex;
-        
-    }
-    header nav ul{
-        display: flex;
-        justify-content: space-between;
-    }
-   
-    /*nav-bar*/
+footer {
+  min-width: 400px;
+  max-width: 100%;
+}
 
+.copyright {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
 
-    .burger-div{
-        display: none;
-    }
-    nav { 
+.boton {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: green;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0);
+  z-index: 100;
+  transition: all 300ms ease;
+}
+
+.product h2 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(70, 67, 67);
+  padding: 15px;
+}
+.product:hover {
+  border-radius: 50px;
+  box-shadow: 36px 36px 72px grey, -36px -36px 72px grey;
+}
+
+/*GRID*/
+.iphonehtml {
+  grid-area: iphonehtml;
+  display: grid;
+  grid-template-areas: "imgIphone imgIphone descriptionIphone descriptionIphone" "imgIphone imgIphone descriptionIphone descriptionIphone";
+}
+
+.imgIphone {
+  grid-area: imgIphone;
+}
+
+.descriptionIphone {
+  grid-area: descriptionIphone;
+}
+
+/* GRID PARA PRODUCT DETAIL*/
+/* GRID P/HEADER */
+.index-head {
+  grid-area: index-header;
+  display: grid;
+  grid-template-areas: "top-navbar top-navbar top-navbar top-navbar" "nav-bar nav-bar nav-bar nav-bar" "burger burger burger burger";
+}
+
+.top-navbar {
+  grid-area: top-navbar;
+}
+
+.nav-bar {
+  grid-area: nav-bar;
+}
+
+.burger-div {
+  grid-area: burger;
+}
+
+/* GRID P/producto */
+/* GRID P/producto */
+.product {
+  grid-area: product;
+  display: grid;
+  grid-template-areas: "imagen imagen imagen imagen" "datos datos datos datos";
+}
+
+.datos {
+  grid-area: datos;
+}
+
+.prodImg {
+  grid-area: imagen;
+}
+
+/* GRID P/HEADER */
+.celulares {
+  grid-area: celulares;
+  flex-wrap: nowrap;
+  display: grid;
+  grid-template-areas: "phone1 phone1 phone1 phone1" "phone2 phone2 phone2 phone2" "phone3 phone3 phone3 phone3" "phone4 phone4 phone4 phone4";
+}
+
+#phone1 {
+  grid-area: phone1;
+}
+
+#phone2 {
+  grid-area: phone2;
+}
+
+#phone3 {
+  grid-area: phone3;
+}
+
+#phone4 {
+  grid-area: phone4;
+}
+
+.product img {
+  width: auto;
+}
+
+.celulares div {
+  max-width: 90%;
+  justify-content: center;
+}
+
+.accesorios {
+  grid-area: accesorios;
+  display: grid;
+  grid-template-areas: "funda1 funda1 funda1 funda1" "funda2 funda2 funda2 funda2" "funda3 funda3 funda3 funda3" "funda4 funda4 funda4 funda4";
+}
+
+#funda1 {
+  grid-area: funda1;
+}
+
+#funda2 {
+  grid-area: funda2;
+}
+
+#funda3 {
+  grid-area: funda3;
+}
+
+#funda4 {
+  grid-area: funda4;
+}
+
+.others {
+  grid-area: others;
+  display: grid;
+  grid-template-areas: "cargador1 cargador1 cargador1 cargador1" "cargador2 cargador2 cargador2 cargador2" "cargador3 cargador3 cargador3 cargador3" "cargador4 cargador4 cargador4 cargador4";
+}
+
+#cargador1 {
+  grid-area: cargador1;
+}
+
+#cargador2 {
+  grid-area: cargador2;
+}
+
+#cargador3 {
+  grid-area: cargador3;
+}
+
+#cargador4 {
+  grid-area: cargador4;
+}
+
+.prodImg {
+  width: 100%;
+  height: 50%;
+}
+
+.product {
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 10px;
+  border: solid grey 1px;
+  box-shadow: 36px 36px 72px #d6cece, -36px -36px 72px #ffffff;
+  margin: 5%;
+  padding: 5%;
+  height: auto;
+  width: 90%;
+}
+
+.img0 {
+  width: 100%;
+}
+
+#colorGreen {
+  color: rgb(9, 63, 9);
+}
+
+#colorRed {
+  color: rgb(139, 55, 55);
+}
+
+#colorBlue {
+  color: rgb(17, 17, 82);
+}
+
+#colorDark {
+  color: rgb(12, 12, 12);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 2%;
+  margin-bottom: 0, 5%;
+}
+
+/*PRODUCT DETAILS*/
+.h2-prod-detail {
+  font-size: 30px;
+  color: black;
+}
+
+.caract-producto > li {
+  margin: 2%;
+}
+
+.iphonehtml {
+  background-color: #b1adaf;
+}
+
+.caja-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  background-color: #dbd6d8;
+  border-radius: 20px;
+  height: 60%;
+  width: 50%;
+}
+
+.descriptionIphone {
+  margin-top: 15%;
+}
+
+.imgIphone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.imgIphone img {
+  width: 60%;
+  height: 90%;
+  border-radius: 10px;
+  obJect-fit: cover;
+  transition: transform 400ms;
+}
+.imgIphone img:hover {
+  transform: scale(1.2);
+}
+
+.comprar-button:hover, .volver-button:hover {
+  background-color: rgb(172, 169, 169);
+  color: white;
+}
+
+.comprar-button {
+  margin-top: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.volver-button {
+  margin-top: 10px;
+  background-color: white;
+  padding: 10PX;
+  margin-left: 5%;
+}
+.volver-button a {
+  color: black;
+}
+.volver-button a:hover {
+  color: white;
+}
+
+h2, h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(70, 67, 67);
+  padding: 15px;
+  margin-left: 5%;
+}
+
+.opiniones {
+  text-align: center;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(70, 67, 67);
+  padding: 15px;
+  margin-left: 5%;
+}
+
+.sobreNosotros {
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#Marian {
+  margin: auto;
+}
+
+/*SOBRE NOSOTROS*/
+.sobre-nosotros {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*CONTACTO*/
+h1 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*CONTACTO*/
+.imgService {
+  width: 100%;
+  height: 80vh;
+}
+
+.lista {
+  font-family: "Open Sans", sans-serif;
+  color: #504F4F;
+  padding: 25px;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.fotoServicio {
+  text-align: center;
+}
+
+.formulario {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(70, 67, 67);
+  text-align: center;
+  background-image: url(/img/Diseño\ sin\ título\ \(2\).jpg);
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  margin-left: 25%;
+}
+
+.comentarios {
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  margin-left: 23%;
+  padding: 20px, 20px;
+  text-align: justify;
+  text-align: center;
+}
+
+/* se trabajo con https://neumorphism.io/#fff5f5 */
+.caja1, .caja2, .caja3 {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e6dddd, #ffffff);
+  box-shadow: 36px 36px 72px #d6cece, -36px -36px 72px #ffffff;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.preguntasFrecuentes {
+  font-family: "Open Sans", sans-serif;
+  color: #fff8f8;
+  background-color: #868485;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.respuestas {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.nov1, .nov2, .nov3, .nov4 {
+  border-radius: 30px;
+  background-color: rgb(228, 224, 224);
+  padding: 20px;
+}
+
+.nov1 img, .nov2 img, .nov3 img, .nov4 img {
+  border-radius: 5px;
+}
+
+.nov1 a, .nov2 a, .nov3 a, .nov4 a {
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+}
+
+.nov1 a:hover, .nov2 a:hover, .nov3 a:hover, .nov4 a:hover {
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(68, 67, 67);
+}
+
+/*NOVEDADES*/
+/* GRID Y RESPONSIVE PESTAÑA NOVEDADES */
+.novedades {
+  padding: 15px;
+  text-align: center;
+}
+
+.pNovedades {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.novedades {
+  grid-area: novedades;
+  grid-gap: 40px;
+  display: grid;
+  grid-template-areas: "nov1 nov1 nov2 nov2" "nov1 nov1 nov2 nov2" "nov3 nov3 nov4 nov4" "nov3 nov3 nov4 nov4";
+}
+
+.nov1 {
+  grid-area: nov1;
+}
+
+.nov2 {
+  grid-area: nov2;
+}
+
+.nov3 {
+  grid-area: nov3;
+}
+
+.nov4 {
+  grid-area: nov4;
+}
+
+form input, form textarea {
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+}
+
+#inputB {
+  border-radius: 5px;
+  padding: 10px;
+  width: 35%;
+  cursor: pointer;
+}
+
+.login-main {
+  margin: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/fondo\ login2.jpg);
+  background-size: cover;
+}
+
+.login-card {
+  width: 100%;
+  padding: 70PX 30PX 44px;
+  border-radius: 24px;
+  background-color: #b6b1b3;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.login-card > h2 {
+  margin: 0 0 12px;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px whitesmoke, 0 0 10px whitesmoke, 0 0 15px grey, 0 0 20px grey, 0 0 25px grey, 0 0 30px grey, 0 0 35px grey;
+}
+
+/* el signo > significa que es hijo */
+.login-form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+.login-form > a {
+  color: #e9ecf0;
+}
+.login-form > input, .login-form > button {
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  border-radius: 8px;
+}
+.login-form > input {
+  border: 2px solid #ebebeb;
+}
+.login-form > button {
+  width: 100%;
+  height: 56px;
+  border: 0;
+  background: #e9ecf0;
+  color: gray;
+  font-weight: 600;
+}
+
+@media (min-width: 350px) {
+  .novedades {
+    grid-area: index-header;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "nov1 nov1 nov1 nov1" "nov2 nov2 nov2 nov2" "nov3 nov3 nov3 nov3" "nov4 nov4 nov4 nov4";
+  }
+  .celulares {
+    grid-area: celulares;
+    display: grid;
+    grid-template-areas: "phone1 phone1 phone2 phone2" "phone3 phone3 phone4 phone4";
+  }
+  .accesorios {
+    grid-area: accesorios;
+    display: grid;
+    grid-template-areas: "funda1 funda1 funda2 funda2" "funda3 funda3 funda4 funda4";
+  }
+  .others {
+    grid-area: others;
+    display: grid;
+    grid-template-areas: "cargador1 cargador1 cargador2 cargador2" "cargador3 cargador3 cargador4 cargador4";
+  }
+  /* GRID P/FOOTER */
+  .footer-article-container {
+    grid-area: footer-article-container;
+    display: grid;
+    grid-template-areas: "leyes leyes redes redes" "mediosDePago mediosDePago contactanos contactanos";
+  }
+  .login-card {
+    margin: 0;
+    width: 400px;
+  }
+}
+@media (min-width: 600px) {
+  .comentarios {
+    grid-template-areas: comentarios;
+    display: grid;
+    grid-template-areas: "caja1" "caja2" "caja3";
+  }
+}
+@media (min-width: 768px) {
+  /*nav-bar */
+  header nav {
+    padding: 2% 2% 0% 2%;
     display: flex;
-    } 
-    .comentarios{
-        grid-template-areas: comentarios;
-        display: grid;
-        grid-template-areas: 
-        "caja1 caja2"
-        "caja3 caja3";
-     }
-      
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  /*nav-bar*/
+  .burger-div {
+    display: none;
+  }
+  nav {
+    display: flex;
+  }
+  .comentarios {
+    grid-template-areas: comentarios;
+    display: grid;
+    grid-template-areas: "caja1 caja2" "caja3 caja3";
+  }
 }
 /* COMPUTADORAS DE ESCRITORIO */
-@media (min-width:1024px) {
-    .index-head{
-        grid-area: index-header;
-        display: grid;
-        grid-template-areas:
-        "top-navbar top-navbar top-navbar top-navbar"
-        "nav-bar nav-bar nav-bar nav-bar"
-        "burger burger burger burger";
-    }
-    .comentarios{
-        grid-template-areas: comentarios;
-        display: grid;
-        grid-template-areas: 
-        "caja1 caja2 caja3";
-     }
-
-     /* GRID P/HEADER */
-    /* GRID P/BODY */
-    .celulares{
-        grid-area: celulares;        
-        display: grid;
-        grid-template-areas: 
-        "phone1 phone2 phone3 phone4";            
-    }
-    
-    .accesorios{
-        grid-area: accesorios;
-        display: grid;
-        grid-template-areas:     
-        "funda1 funda2 funda3 funda4";
-    }
-    
-    
-    .others{
-        grid-area: others;
-        
-        display: grid;
-        grid-template-areas:     
-        "cargador1 cargador2 cargador3 cargador4";
-    }
-    
-     /* GRID P/BODY */
-      /* GRID P/FOOTER */
-      .footer-article-container{
-        grid-area: footer-article-container;
-        display: grid;
-        grid-template-areas:
-        "leyes redes mediosDePago contactanos";
-    }
-    .novedades{
-        grid-area: novedades;
-        display: grid;
-        grid-template-areas: 
-        "nov1 nov1 nov2 nov2"
-        "nov1 nov1 nov2 nov2"
-        "nov3 nov3 nov4 nov4"
-        "nov3 nov3 nov4 nov4";    
-    }
-    
-    
+@media (min-width: 1024px) {
+  .index-head {
+    grid-area: index-header;
+    display: grid;
+    grid-template-areas: "top-navbar top-navbar top-navbar top-navbar" "nav-bar nav-bar nav-bar nav-bar" "burger burger burger burger";
+  }
+  .comentarios {
+    grid-template-areas: comentarios;
+    display: grid;
+    grid-template-areas: "caja1 caja2 caja3";
+  }
+  /* GRID P/HEADER */
+  /* GRID P/BODY */
+  .celulares {
+    grid-area: celulares;
+    display: grid;
+    grid-template-areas: "phone1 phone2 phone3 phone4";
+  }
+  .accesorios {
+    grid-area: accesorios;
+    display: grid;
+    grid-template-areas: "funda1 funda2 funda3 funda4";
+  }
+  .others {
+    grid-area: others;
+    display: grid;
+    grid-template-areas: "cargador1 cargador2 cargador3 cargador4";
+  }
+  /* GRID P/BODY */
+  /* GRID P/FOOTER */
+  .footer-article-container {
+    grid-area: footer-article-container;
+    display: grid;
+    grid-template-areas: "leyes redes mediosDePago contactanos";
+  }
+  .novedades {
+    grid-area: novedades;
+    display: grid;
+    grid-template-areas: "nov1 nov1 nov2 nov2" "nov1 nov1 nov2 nov2" "nov3 nov3 nov4 nov4" "nov3 nov3 nov4 nov4";
+  }
 }
 
-
-
+/*# sourceMappingURL=estilo.css.map */

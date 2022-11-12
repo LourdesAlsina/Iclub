@@ -1,0 +1,58 @@
+.nov1, .nov2, .nov3, .nov4 {
+    border-radius: 30px;
+    background-color: rgb(228, 224, 224);
+    padding: 20px;
+  }
+  
+  .nov1 img, .nov2 img, .nov3 img, .nov4 img {
+    border-radius: 5px;
+  }
+  
+  .nov1 a, .nov2 a, .nov3 a, .nov4 a {
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+  }
+  
+  .nov1 a:hover, .nov2 a:hover, .nov3 a:hover, .nov4 a:hover {
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(68, 67, 67);
+  }
+  
+  /*NOVEDADES*/
+  
+  /* GRID Y RESPONSIVE PESTAÑA NOVEDADES */
+  
+  .novedades {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .pNovedades {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  .novedades {
+    grid-area: novedades;
+    grid-gap: 40px;
+    display: grid;
+    grid-template-areas: "nov1 nov1 nov2 nov2" "nov1 nov1 nov2 nov2" "nov3 nov3 nov4 nov4" "nov3 nov3 nov4 nov4";
+  }
+  
+  .nov1 {
+    grid-area: nov1;
+  }
+  
+  .nov2 {
+    grid-area: nov2;
+  }
+  
+  .nov3 {
+    grid-area: nov3;
+  }
+  
+  .nov4 {
+    grid-area: nov4;
+  }

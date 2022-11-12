@@ -1,0 +1,64 @@
+.carrusel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carruselFotos {
+    img {
+      width: 1400px;
+      height: 650px;
+      object-fit: contain;
+    }
+  
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+  }
+  
+  /* Gap para separar las fotos entre si - Overflor para la barra del carrusel*/
+  
+  .carruselMenu {
+    display: none;
+  }
+  
+  .parrafoGeneral {
+    color: #504F4F;
+    text-align: start;
+    padding: 15px;
+  }
+  
+  h1 {
+    color: #504F4F;
+    padding: 15px;
+  }
+  
+  p {
+    display: flex;
+    justify-content: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #504F4F;
+    padding: 15px;
+    text-align: left;
+    text-align: justify;
+    margin-left: 5%;
+  }
+  
+  /* INDEX */
+  
+  .pIndex {
+    text-align: left;
+  }
+  
+  .video-div {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .video-banner {
+    height: 100%;
+    width: 50%;
+  }
