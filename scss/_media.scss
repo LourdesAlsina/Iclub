@@ -1,69 +1,138 @@
-@media (min-width:350px) {
-    .novedades{
-        grid-area: index-header;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-areas:
-        "nov1 nov1 nov1 nov1"
-        "nov2 nov2 nov2 nov2"
-        "nov3 nov3 nov3 nov3"
-        "nov4 nov4 nov4 nov4";
-    }
- 
-    .celulares{
-        grid-area: celulares;
-        display: grid;
-        grid-template-areas: 
-        "phone1 phone1 phone2 phone2"
-        "phone3 phone3 phone4 phone4";    
-    }
-    
-    .accesorios{
-        grid-area: accesorios;
-        display: grid;
-        grid-template-areas:     
-        "funda1 funda1 funda2 funda2"
-        "funda3 funda3 funda4 funda4";
-    }
-     
-    .others{
-        grid-area: others;
-        
-        display: grid;
-        grid-template-areas:     
-        "cargador1 cargador1 cargador2 cargador2"
-        "cargador3 cargador3 cargador4 cargador4";
-    }
-    
-    /* GRID P/FOOTER */
-    .footer-article-container{
-        grid-area: footer-article-container;
-        display: grid;
-        grid-template-areas:
-        "leyes leyes redes redes" 
-        "mediosDePago mediosDePago contactanos contactanos";
-    }
-    .login-card{
-        margin: 0;
-        width: 400px;
-    }  
- }
+@media (min-width: 350px) {
+  .formulario {
+    font-size: 15px;
+    width: 60%;
+    height: 100%;
 
- @media (min-width:600px) {
-    .comentarios{
-        grid-template-areas: comentarios;
-        display: grid;
-        grid-template-areas: 
-        "caja1" 
-        "caja2"
-        "caja3";
-     }     
+    input {
+      width: 70%;
+      height: 35%;
+    }
+
+    textarea {
+      width: 90%;
+      height: 70%;
+    }
+  }
+
+  /* LOGIN */
+
+  .login-card > {
+    h2, h3 {
+      margin-right: 10%;
+    }
+  }
+
+  .login-form > {
+    button {
+      align-content: center;
+      width: 40%;
+      height: 50%;
+      background: #e9ecf0;
+      color: gray;
+      font-weight: 600;
+      margin-bottom: 20%;
+      margin-left: 25%;
+    }
+
+    input {
+      width: 60%;
+      height: 40PX;
+      margin-left: 15%;
+    }
+  }
+
+  /* LOGIN */
+
+  .novedades {
+    grid-area: index-header;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "nov1 nov1 nov1 nov1" "nov2 nov2 nov2 nov2" "nov3 nov3 nov3 nov3" "nov4 nov4 nov4 nov4";
+  }
+
+  .celulares {
+    grid-area: celulares;
+    display: grid;
+    grid-template-areas: "phone1 phone1 phone2 phone2" "phone3 phone3 phone4 phone4";
+  }
+
+  .accesorios {
+    grid-area: accesorios;
+    display: grid;
+    grid-template-areas: "funda1 funda1 funda2 funda2" "funda3 funda3 funda4 funda4";
+  }
+
+  .others {
+    grid-area: others;
+    display: grid;
+    grid-template-areas: "cargador1 cargador1 cargador2 cargador2" "cargador3 cargador3 cargador4 cargador4";
+  }
+
+  /* GRID P/FOOTER */
+
+  .login-card {
+    margin: 0;
+    width: 400px;
+  }
+
+  .footer-article-container {
+    width: 100%;
+  }
 }
-    
+
+@media (min-width: 600px) {
+  .comentarios {
+    grid-template-areas: comentarios;
+    display: grid;
+    grid-template-areas: "caja1" "caja2" "caja3";
+  }
+
+  .index-head {
+    grid-area: index-header;
+    display: grid;
+    grid-template-areas: "top-navbar top-navbar top-navbar" "nav-bar nav-bar nav-bar" "nav-bar nav-bar nav-bar" "burger burger burger";
+  }
+}
 
 @media (min-width: 768px) {
-    /*nav-bar */
+  /* Barra de navegación */
+
+  .index-head {
+    width: 100%;
+  }
+
+  /* Barra de navegación */
+
+  /* footer */
+
+  .footer-article-container {
+    width: 100%;
+    grid-area: footer-article-container;
+    display: grid;
+    grid-template-areas: "leyes leyes redes redes" "mediosDePago mediosDePago contactanos contactanos";
+  }
+
+  /* footer */
+
+  .comentarios {
+    grid-template-areas: comentarios;
+    display: grid;
+    grid-template-areas: "caja1 caja2" "caja3 caja3";
+  }
+}
+  /* COMPUTADORAS DE ESCRITORIO */
+  @media (min-width: 1024px) {
+    /* Barra de navegación */
+  
+    .burger-div {
+      display: none;
+    }
+  
+    nav {
+      display: flex;
+    }
   
     header nav {
       padding: 2% 2% 0% 2%;
@@ -75,25 +144,8 @@
       }
     }
   
-    /*nav-bar*/
+    /* Barra de navegación */
   
-    .burger-div {
-      display: none;
-    }
-  
-    nav {
-      display: flex;
-    }
-  
-    .comentarios {
-      grid-template-areas: comentarios;
-      display: grid;
-      grid-template-areas: "caja1 caja2" "caja3 caja3";
-    }
-  }
-  
-  /* COMPUTADORAS DE ESCRITORIO */
-  @media (min-width: 1024px) {
     .index-head {
       grid-area: index-header;
       display: grid;
@@ -141,7 +193,48 @@
       display: grid;
       grid-template-areas: "nov1 nov1 nov2 nov2" "nov1 nov1 nov2 nov2" "nov3 nov3 nov4 nov4" "nov3 nov3 nov4 nov4";
     }
+  
+    .formulario {
+      text-align: center;
+      width: 50%;
+      height: 100%;
+      background-size: cover;
+      text-align: center;
+      margin-left: 25%;
+  
+      input {
+        width: 50%;
+        height: 50%;
+        text-align: center;
+      }
+  
+      textarea {
+        width: 50%;
+        height: 50%;
+      }
+    }
   }
-
-
-
+  
+  #titleLog {
+    font-family: "Rammetto One", cursive;
+    color: #504F4F;
+    padding: 80px;
+    text-align: center;
+    font-size: 80px;
+  }
+  
+  h1 {
+    color: #504F4F;
+    padding: 15px;
+  }
+  
+  p {
+    display: flex;
+    justify-content: left;
+    font-family: "Open Sans", sans-serif;
+    color: #504F4F;
+    padding: 15px;
+    text-align: left;
+    text-align: justify;
+    margin-left: 5%;
+  }

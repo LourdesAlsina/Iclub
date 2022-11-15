@@ -112,7 +112,6 @@ nav {
   width: 100%;
   margin: 0;
   padding: 10px;
-  position: sticky;
 }
 
 nav a {
@@ -213,7 +212,7 @@ footer {
   background-color: #868485;
   color: white;
   padding: 20px 5%;
-  margin-top: 25px;
+  margin-top: 0px;
 }
 
 .leyes {
@@ -563,10 +562,11 @@ h4 {
 }
 
 /*CONTACTO*/
-h1 {
+.letrasubtitulo {
   text-align: center;
   padding: 10px;
   margin: 10px;
+  font-size: 100%;
 }
 
 /*CONTACTO*/
@@ -625,6 +625,7 @@ h1 {
   font-family: "Open Sans", sans-serif;
   color: #fff8f8;
   background-color: #868485;
+  border-radius: 5px;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -719,13 +720,10 @@ form input, form textarea {
 }
 
 .login-main {
-  margin: 30px;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  /* background-image: url(/img/fondo\ login2.jpg);
-  background-size: cover; */
   background-size: 300% 300%;
   background-image: linear-gradient(
         -45deg, 
@@ -744,18 +742,9 @@ form input, form textarea {
 }
 
 
-/* .login-card {
-  width: 100%;
-  padding: 70PX 30PX 44px;
-  border-radius: 24px;
-  background-color: #b6b1b3;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-} */
 .login-card > h2 {
-  margin: 0 0 12px;
   font-size: 36px;
+  margin-top: 10%;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
@@ -790,9 +779,46 @@ form input, form textarea {
   background: #e9ecf0;
   color: gray;
   font-weight: 600;
+  margin-bottom: 20%;
 }
 
 @media (min-width: 350px) {
+  .formulario{
+  font-size: 15px;
+  width: 60%;
+  height: 100%;
+  }
+  .formulario input {
+    width: 70%;
+    height: 35%;
+  }
+  .formulario textarea {
+    width: 90%;
+    height: 70%;
+  }
+
+  /* LOGIN */
+  .login-card > h2,
+  .login-card > h3{
+    margin-right: 10%;
+  }  
+  .login-form > button {
+    align-content: center;    
+    width: 40%;
+    height: 50%;    
+    background: #e9ecf0;
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 20%;
+    margin-left: 25%;
+  }
+  .login-form > input{
+    width: 60%;
+    height: 40PX;
+    margin-left: 15%;
+  }
+   /* LOGIN */
+
   .novedades {
     grid-area: index-header;
     display: grid;
@@ -816,14 +842,13 @@ form input, form textarea {
     grid-template-areas: "cargador1 cargador1 cargador2 cargador2" "cargador3 cargador3 cargador4 cargador4";
   }
   /* GRID P/FOOTER */
-  .footer-article-container {
-    grid-area: footer-article-container;
-    display: grid;
-    grid-template-areas: "leyes leyes redes redes" "mediosDePago mediosDePago contactanos contactanos";
-  }
+ 
   .login-card {
     margin: 0;
     width: 400px;
+  }
+  .footer-article-container {
+    width: 100%;
   }
 }
 @media (min-width: 600px) {
@@ -832,32 +857,58 @@ form input, form textarea {
     display: grid;
     grid-template-areas: "caja1" "caja2" "caja3";
   }
+  .index-head {
+    grid-area: index-header;
+    display: grid;
+    grid-template-areas: "top-navbar top-navbar top-navbar" "nav-bar nav-bar nav-bar" "nav-bar nav-bar nav-bar" "burger burger burger";
+  }
 }
 @media (min-width: 768px) {
-  /*nav-bar */
-  header nav {
-    padding: 2% 2% 0% 2%;
-    display: flex;
+  /* Barra de navegación */
+  .index-head{
+    width: 100%;
   }
-  header nav ul {
-    display: flex;
-    justify-content: space-between;
+  /* Barra de navegación */
+  
+  
+  /* footer */
+  .footer-article-container {
+    width: 100%;
+    grid-area: footer-article-container;
+    display: grid;
+    grid-template-areas: 
+    "leyes leyes redes redes" 
+    "mediosDePago mediosDePago contactanos contactanos";
   }
-  /*nav-bar*/
-  .burger-div {
-    display: none;
-  }
-  nav {
-    display: flex;
-  }
+  /* footer */
+  
   .comentarios {
     grid-template-areas: comentarios;
     display: grid;
     grid-template-areas: "caja1 caja2" "caja3 caja3";
   }
 }
+
+
 /* COMPUTADORAS DE ESCRITORIO */
 @media (min-width: 1024px) {
+/* Barra de navegación */
+.burger-div {
+  display: none;
+}
+nav {
+  display: flex;
+}
+header nav {
+  padding: 2% 2% 0% 2%;
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+/* Barra de navegación */
+
   .index-head {
     grid-area: index-header;
     display: grid;
@@ -897,6 +948,23 @@ form input, form textarea {
     display: grid;
     grid-template-areas: "nov1 nov1 nov2 nov2" "nov1 nov1 nov2 nov2" "nov3 nov3 nov4 nov4" "nov3 nov3 nov4 nov4";
   }
+  .formulario {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  margin-left: 25%;
+  }
+  .formulario input {
+      width: 50%;
+      height: 50%;
+      text-align: center;
+    }
+  .formulario textarea {
+      width: 50%;
+      height: 50%;
+    }
 }
 #titleLog {
   font-family: "Rammetto One", cursive;
