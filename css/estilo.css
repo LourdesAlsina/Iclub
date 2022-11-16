@@ -724,6 +724,7 @@ form input, form textarea {
   text-align: center;
   justify-content: center;
   align-items: center;
+  width: 100%;
   background-size: 300% 300%;
   background-image: linear-gradient(
         -45deg, 
@@ -783,6 +784,10 @@ form input, form textarea {
 }
 
 @media (min-width: 350px) {
+  .pNovedades {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
   .formulario{
   font-size: 15px;
   width: 60%;
@@ -795,6 +800,11 @@ form input, form textarea {
   .formulario textarea {
     width: 90%;
     height: 70%;
+  }
+  .sobreNosotros {
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
   /* LOGIN */
@@ -864,6 +874,14 @@ form input, form textarea {
   }
 }
 @media (min-width: 768px) {
+  .product {
+    justify-content: space-between;
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+    height: auto;
+    width: 60%;
+  }
   /* Barra de navegación */
   .index-head{
     width: 100%;
@@ -892,6 +910,17 @@ form input, form textarea {
 
 /* COMPUTADORAS DE ESCRITORIO */
 @media (min-width: 1024px) {
+  .product {
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 10px;
+    border: solid grey 1px;
+    box-shadow: 36px 36px 72px #d6cece, -36px -36px 72px #ffffff;
+    margin: 5%;
+    padding: 5%;
+    height: auto;
+    width: 90%;
+  }
 /* Barra de navegación */
 .burger-div {
   display: none;
