@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Login</title>
     <script src="https://kit.fontawesome.com/f10038429e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +14,13 @@
     <!-- SEO -->
     <meta name="keywords" content="iphone, iphone apple, iphone 14,iphone 13, iphone alarm volume, iphone accessories, iphone app store, iphone battery replacement, iphone battery percentage, iphone black screen, iphone case, iphone charger, ihpone service, 	
     iphone camera,iphone news, iphone cost, iphone deals, iphone earpods, iphone repairs">
-    <meta name="description" content="Tienda de venta de celulares Iphones, fundas y accesorios. Servicio de reparación. Dejanos tu consulta y pronto nos pondremos en contacto con vos.">
+    <meta name="description" content="Tienda de venta de celulares Iphones, fundas y accesorios. Servicio de reparación. Registrate y accede a los mejores descuentos, recibi notificaciones de todas las novedades.">
     <link rel="stylesheet" href="/../css/estilo.css">
-    
+  
     
 </head>
 
-<body>
+<body class="Login-body">
     <header class="index-head">
         <div class="top-navbar">
             <h1 id="titleLog">iClub</h1>   
@@ -43,33 +43,79 @@
             </ul>                            
         </nav>
 
-    </header>
+    </header>     
     
-    <h2 class="letrasubtitulo">Formulario de Contacto</h2>
-    <br>
-    <br> 
-
-    <form class="formulario">
-        <br><br>
-        <label for="nombre">Nombre</label>
-        <br><br>
-        <input type="text" id="nombre">
-        <br><br>
-        <label for="apellido">Apellido</label>
-        <br><br>
-        <input type="text" id="apellido">
-        <br><br>
-        <label for="correoelectrónico">Correo electrónico</label>
-        <br><br>
-        <input type="email" id="correoelectrónico">
-        <br><br><br>
-        <textarea name="" id="" cols="30" rows="10">Deje su mensaje...!</textarea>
-        <br><br>
-        <input id="inputB" data-aos="zoom-in" type="submit">
-        <input  id="inputB" data-aos="zoom-in" type="reset">
-        <br><br>
-    </form>
-    <br><br>
+    
+</header>     
+<main class="register-main">
+        <form class="register-form">
+            <h2 class="letrasubtitulo">Registrate</h2>
+            <br><br>
+             <label for="nombre">Nombre</label>
+             <br><br>
+            <input type="text" id="nombre">
+            <br><br><br>
+            <label for="apellido">Apellido</label>
+            <br><br>
+            <input type="text" id="apellido">
+            <br><br><br>
+            <label for="#">Género</label>
+            <br><br>
+            <p>
+                <input class="masculino" type="radio"><label class="genero" for="genero">Masculino</label>
+                <input class="genero" type="radio"> <label class="genero" for="genero">Femenino</label>
+                <input class="genero" type="radio"> <label class="genero" for="genero">Otro</label>
+            </p>
+            <br><br><br>
+            <label for="date">Fecha de nacimiento</label>
+            <br><br>
+            <input type="date" name="fecha de nacimiento" id="fecha">
+            <br><br><br>
+            <label for="number">Número de Teléfono</label>
+            <br><br>
+            <input type="tel">
+            <br><br><br>
+            <label for="city">Provincia</label>
+            <br><br>
+            <select name="characters">
+                <option value="Salta">Salta</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Bariloche">Bariloche</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="Tucuman">Tucuman</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Neuquen">Neuquen</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Mendoza">Mendoza</option>
+            </select>
+            <br><br><br>
+            <label for="dirección">Dirección</label>
+            <br><br>
+            <input type="text">
+            <br><br><br>
+            <label for="correoelectrónico">Correo electrónico</label>
+            <br><br>
+            <input type="email" id="correoelectrónico">
+            <br><br><br>
+            <label for="password">Contraseña</label>
+            <br><br>
+            <input type="password">
+            <br><br><br>
+            <label for="confirm-password">Confirmar contraseña</label>
+            <br><br>
+            <input type="password">
+            <br><br><br>
+            <label  for="Términos">Acepto términos y condiciones</label> 
+            <br><br>
+            <input class="checkbox" type="checkbox" name="" id="">
+            <br><br><br>
+            <button class="regButton">REGISTRARSE</button>
+            <br><br>
+        </form>
+</main>
+ 
+    
 
     <footer>
         <div class="footer-article-container">
@@ -102,11 +148,11 @@
                  <a href="https://api.whatsapp.com/send?phone=3875751178&text=%C2%A1Hola%20ICLUB,%20me%20gustar%C3%ADa%20consultar%20por..!" target="_blank"> <img data-aos="zoom-in-up" class="boton" src="../img/icono wpp.png" alt=""></a>
             </div>
         </div>
-        
-    <div class="copyright">
-        <p>Copyright © 1999-2019 iclub</p>
-    </div> 
-</footer>
+            
+        <div class="copyright">
+            <p>Copyright © 1999-2019 iclub</p>
+        </div> 
+    </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
@@ -133,4 +179,3 @@
     }
 </script>
 </body>
-</html>
