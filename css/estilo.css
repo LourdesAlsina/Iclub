@@ -597,8 +597,21 @@ h4 {
   width: 50%;
   height: 100%;
   background-size: cover;
-  text-align: center;
   margin-left: 25%;
+  padding: 2%;
+ 
+}
+.formulario > label, 
+.formulario > input,
+.formulario > textarea{
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+
 }
 
 .comentarios {
@@ -989,11 +1002,17 @@ form input, form textarea {
     display: grid;
     grid-template-areas: "caja1 caja2" "caja3 caja3";
   }
+  .caract-producto > li {
+    margin-top: 0;
+  }
 }
 
 
 /* COMPUTADORAS DE ESCRITORIO */
 @media (min-width: 1024px) {
+  .caract-producto > li {
+    margin-top: 2%;
+  }
   .product {
     justify-content: space-between;
     text-align: center;
@@ -1066,7 +1085,6 @@ header nav ul {
   width: 50%;
   height: 100%;
   background-size: cover;
-  text-align: center;
   margin-left: 25%;
   }
   .formulario input {
