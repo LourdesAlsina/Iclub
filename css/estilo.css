@@ -835,7 +835,7 @@ form input, form textarea {
   text-shadow: 0 0 5px whitesmoke, 0 0 10px whitesmoke, 0 0 15px grey, 0 0 20px grey, 0 0 25px grey, 0 0 30px grey, 0 0 35px grey;
 }
 .register-form{
-  width: 20%;
+  width: 100%;
 }
 .register-form > label, 
 .register-form > p{
@@ -878,6 +878,7 @@ form input, form textarea {
 }
 
 
+
 /* REGISTRO */
 
 @media (min-width: 350px) {
@@ -895,7 +896,7 @@ form input, form textarea {
     height: 35%;
   }
   .formulario textarea {
-    width: 90%;
+    width: 70%;
     height: 70%;
   }
   .sobreNosotros {
@@ -957,7 +958,27 @@ form input, form textarea {
   .footer-article-container {
     width: 100%;
   }
+  .register-main{
+    width: 100%;
+  }
+  .register-form > input,
+  .register-form > select{
+  width: 80%;
+  height: 80%;
+  padding: 5%;
+  border-radius: 5px;
 }
+
+.register-form > button {
+  width: 50%;
+}
+
+.register-form{
+  width: 100%;
+}
+}
+
+
 @media (min-width: 600px) {
   .comentarios {
     grid-template-areas: comentarios;
@@ -1005,120 +1026,151 @@ form input, form textarea {
   .caract-producto > li {
     margin-top: 0;
   }
+  .register-form > input,
+  .register-form > select{
+  width: 40%;
+  height: 5px;
+  padding: 5%;
+  border-radius: 5px;
+}
+.register-form > button {
+  width: 30%;
+}
+#checkboxR {
+  height: 100%;
+}
 }
 
 
 /* COMPUTADORAS DE ESCRITORIO */
-@media (min-width: 1024px) {
-  .caract-producto > li {
-    margin-top: 2%;
-  }
-  .product {
-    justify-content: space-between;
-    text-align: center;
-    border-radius: 10px;
-    border: solid grey 1px;
-    box-shadow: 36px 36px 72px #d6cece, -36px -36px 72px #ffffff;
-    margin: 5%;
-    padding: 5%;
-    height: auto;
-    width: 90%;
-  }
-/* Barra de navegación */
-.burger-div {
-  display: none;
-}
-nav {
-  display: flex;
-}
-header nav {
-  padding: 2% 2% 0% 2%;
-  display: flex;
-}
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-/* Barra de navegación */
-
-  .index-head {
-    grid-area: index-header;
-    display: grid;
-    grid-template-areas: "top-navbar top-navbar top-navbar top-navbar" "nav-bar nav-bar nav-bar nav-bar" "burger burger burger burger";
-  }
-  .comentarios {
-    grid-template-areas: comentarios;
-    display: grid;
-    grid-template-areas: "caja1 caja2 caja3";
-  }
-  /* GRID P/HEADER */
-  /* GRID P/BODY */
-  .celulares {
-    grid-area: celulares;
-    display: grid;
-    grid-template-areas: "phone1 phone2 phone3 phone4";
-  }
-  .accesorios {
-    grid-area: accesorios;
-    display: grid;
-    grid-template-areas: "funda1 funda2 funda3 funda4";
-  }
-  .others {
-    grid-area: others;
-    display: grid;
-    grid-template-areas: "cargador1 cargador2 cargador3 cargador4";
-  }
-  /* GRID P/BODY */
-  /* GRID P/FOOTER */
-  .footer-article-container {
-    grid-area: footer-article-container;
-    display: grid;
-    grid-template-areas: "leyes redes mediosDePago contactanos";
-  }
-  .novedades {
-    grid-area: novedades;
-    display: grid;
-    grid-template-areas: "nov1 nov1 nov2 nov2" "nov1 nov1 nov2 nov2" "nov3 nov3 nov4 nov4" "nov3 nov3 nov4 nov4";
-  }
-  .formulario {
-  text-align: center;
-  width: 50%;
-  height: 100%;
-  background-size: cover;
-  margin-left: 25%;
-  }
-  .formulario input {
-      width: 50%;
-      height: 50%;
+  @media (min-width: 1024px) {
+    .caract-producto > li {
+      margin-top: 2%;
+    }
+    .product {
+      justify-content: space-between;
       text-align: center;
+      border-radius: 10px;
+      border: solid grey 1px;
+      box-shadow: 36px 36px 72px #d6cece, -36px -36px 72px #ffffff;
+      margin: 5%;
+      padding: 5%;
+      height: auto;
+      width: 90%;
     }
+  /* Barra de navegación */
+  .burger-div {
+    display: none;
+  }
+  nav {
+    display: flex;
+  }
+  header nav {
+    padding: 2% 2% 0% 2%;
+    display: flex;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Barra de navegación */
+
+    .index-head {
+      grid-area: index-header;
+      display: grid;
+      grid-template-areas: "top-navbar top-navbar top-navbar top-navbar" "nav-bar nav-bar nav-bar nav-bar" "burger burger burger burger";
+    }
+    .comentarios {
+      grid-template-areas: comentarios;
+      display: grid;
+      grid-template-areas: "caja1 caja2 caja3";
+    }
+    /* GRID P/HEADER */
+    /* GRID P/BODY */
+    .celulares {
+      grid-area: celulares;
+      display: grid;
+      grid-template-areas: "phone1 phone2 phone3 phone4";
+    }
+    .accesorios {
+      grid-area: accesorios;
+      display: grid;
+      grid-template-areas: "funda1 funda2 funda3 funda4";
+    }
+  .others {
+      grid-area: others;
+      display: grid;
+      grid-template-areas: "cargador1 cargador2 cargador3 cargador4";
+    }
+    /* GRID P/BODY */
+    /* GRID P/FOOTER */
+  .footer-article-container {
+      grid-area: footer-article-container;
+      display: grid;
+      grid-template-areas: "leyes redes mediosDePago contactanos";
+    }
+    .novedades {
+    grid-area: novedades;
+      display: grid;
+      grid-template-areas: "nov1 nov1 nov2 nov2" "nov1 nov1 nov2 nov2" "nov3 nov3 nov4 nov4" "nov3 nov3 nov4 nov4";
+    }
+  .formulario {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    margin-left: 25%;
+    }
+  .formulario input {
+        width: 50%;
+        height: 50%;
+        text-align: center;
+      }
   .formulario textarea {
-      width: 50%;
-      height: 50%;
-    }
-}
-#titleLog {
-  font-family: "Rammetto One", cursive;
-  color: #504F4F;
-  padding: 80px;
-  text-align: center;
-  font-size: 80px;
-}
+        width: 50%;
+        height: 50%;
+      }
+  .register-form > input,
+  .register-form > select{
+    width: 30%;
+    height: 5px;
+    padding: 2%;
+    border-radius: 5px;
+  }
+  .register-form > p{
+    width: 50%;
+    margin-left: 25%;
+  }
+  .register-form > button {
+    width: 20%;
+  }
+  #checkboxR {
+    height: 100%;
+  }
 
-h1 {
-  color: #504F4F;
-  padding: 15px;
-}
+  #titleLog {
+    font-family: "Rammetto One", cursive;
+    color: #504F4F;
+    padding: 80px;
+    text-align: center;
+    font-size: 80px;
+  }
 
-p {
-  display: flex;
-  justify-content: left;
-  font-family: "Open Sans", sans-serif;
-  color: #504F4F;
-  padding: 15px;
-  text-align: left;
-  text-align: justify;
-  margin-left: 5%;
-}
+  h1 {
+    color: #504F4F;
+    padding: 15px;
+  }
 
-/*# sourceMappingURL=estilo.css.map */
+  p {
+    display: flex;
+    justify-content: left;
+    font-family: "Open Sans", sans-serif;
+    color: #504F4F;
+    padding: 15px;
+    text-align: left;
+    text-align: justify;
+    margin-left: 5%;
+  }
+  }
+
+  /*# sourceMappingURL=estilo.css.map */
