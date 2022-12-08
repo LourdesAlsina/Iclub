@@ -3,7 +3,6 @@
     margin-left: 25px;
     margin-right: 25px;
   }
-
   .formulario {
     font-size: 15px;
     width: 60%;
@@ -19,21 +18,17 @@
       height: 70%;
     }
   }
-
   .sobreNosotros {
     text-align: center;
     margin-left: 25px;
     margin-right: 25px;
   }
-
   /* LOGIN */
-
   .login-card > {
     h2, h3 {
       margin-right: 10%;
     }
   }
-
   .login-form > {
     button {
       align-content: center;
@@ -52,9 +47,7 @@
       margin-left: 15%;
     }
   }
-
   /* LOGIN */
-
   .novedades {
     grid-area: index-header;
     display: grid;
@@ -62,36 +55,32 @@
     align-items: center;
     grid-template-areas: "nov1 nov1 nov1 nov1" "nov2 nov2 nov2 nov2" "nov3 nov3 nov3 nov3" "nov4 nov4 nov4 nov4";
   }
-
   .celulares {
     grid-area: celulares;
     display: grid;
     grid-template-areas: "phone1 phone1 phone2 phone2" "phone3 phone3 phone4 phone4";
   }
-
   .accesorios {
     grid-area: accesorios;
     display: grid;
     grid-template-areas: "funda1 funda1 funda2 funda2" "funda3 funda3 funda4 funda4";
   }
-
   .others {
     grid-area: others;
     display: grid;
     grid-template-areas: "cargador1 cargador1 cargador2 cargador2" "cargador3 cargador3 cargador4 cargador4";
   }
-
   /* GRID P/FOOTER */
-
   .login-card {
     margin: 0;
     width: 400px;
   }
-
   .footer-article-container {
     width: 100%;
   }
 }
+
+
 @media (min-width: 600px) {
   .comentarios {
     grid-template-areas: comentarios;
@@ -106,6 +95,7 @@
   }
 }
 
+
 @media (min-width: 768px) {
   .product {
     justify-content: space-between;
@@ -116,15 +106,9 @@
     width: 60%;
   }
 
-  /* Barra de navegación */
-
   .index-head {
     width: 100%;
   }
-
-  /* Barra de navegación */
-
-  /* footer */
 
   .footer-article-container {
     width: 100%;
@@ -133,14 +117,14 @@
     grid-template-areas: "leyes leyes redes redes" "mediosDePago mediosDePago contactanos contactanos";
   }
 
-  /* footer */
-
   .comentarios {
     grid-template-areas: comentarios;
     display: grid;
     grid-template-areas: "caja1 caja2" "caja3 caja3";
   }
 }
+
+
   /* COMPUTADORAS DE ESCRITORIO */
   @media (min-width: 1024px) {
     .product {
@@ -154,8 +138,6 @@
       height: auto;
       width: 90%;
     }
-  
-    /* Barra de navegación */
   
     .burger-div {
       display: none;
@@ -175,8 +157,6 @@
       }
     }
   
-    /* Barra de navegación */
-  
     .index-head {
       grid-area: index-header;
       display: grid;
@@ -188,9 +168,6 @@
       display: grid;
       grid-template-areas: "caja1 caja2 caja3";
     }
-  
-    /* GRID P/HEADER */
-    /* GRID P/BODY */
   
     .celulares {
       grid-area: celulares;
@@ -209,9 +186,6 @@
       display: grid;
       grid-template-areas: "cargador1 cargador2 cargador3 cargador4";
     }
-  
-    /* GRID P/BODY */
-    /* GRID P/FOOTER */
   
     .footer-article-container {
       grid-area: footer-article-container;
@@ -245,6 +219,7 @@
       }
     }
   }
+  
   
   #titleLog {
     font-family: "Rammetto One", cursive;

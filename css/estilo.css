@@ -10,6 +10,7 @@
   gap: 10px;
   overflow: auto;
 }
+
 .carruselFotos img {
   width: 1400px;
   height: 650px;
@@ -46,6 +47,8 @@ p {
 /* INDEX */
 .pIndex {
   text-align: left;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .video-div {
@@ -611,8 +614,33 @@ h4 {
   margin-right: 15%;
   margin-top: 3%;
   margin-bottom: 1%;
-
 }
+
+.register-form > label{
+  display: block;  
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+ 
+}
+.iNombre,
+.iApellido,
+.iFecha,
+.iTel,
+.sProvincia,
+.iDirección,
+.iEmail,
+.iCPass,
+.iPass,
+.Icheckbox{
+  margin-left: 35%;    
+}
+.regButton{
+  margin-left: 40%;
+  margin-top: 4%;
+}
+
 
 .comentarios {
   display: inline-block;
@@ -622,6 +650,7 @@ h4 {
   padding: 20px, 20px;
   text-align: justify;
   text-align: center;
+  
 }
 
 /* se trabajo con https://neumorphism.io/#fff5f5 */
@@ -777,15 +806,18 @@ form input, form textarea {
 .login-form > a {
   color: #e9ecf0;
 }
+
 .login-form > input, .login-form > button {
   width: 100%;
   height: 56px;
   padding: 0 16px;
   border-radius: 8px;
 }
+
 .login-form > input {
   border: 2px solid #ebebeb;
 }
+
 .login-form > button {
   width: 100%;
   height: 56px;
@@ -795,18 +827,14 @@ form input, form textarea {
   font-weight: 600;
   margin-bottom: 20%;
 }
+
 .logButtom:hover {
   background: grey;
   color: #e9ecf0;
-
 }
 
 /* REGISTRO */
 .register-main{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   background-size: 300% 300%;
   background-image: linear-gradient(
@@ -824,9 +852,9 @@ form input, form textarea {
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
-.register-form > h2 {
-  font-size: 36px;
-  margin-top: 10%;
+
+.letrasubtitulo {
+  font-size: 36px;  
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
@@ -834,14 +862,18 @@ form input, form textarea {
   color: rgb(255, 255, 255);
   text-shadow: 0 0 5px whitesmoke, 0 0 10px whitesmoke, 0 0 15px grey, 0 0 20px grey, 0 0 25px grey, 0 0 30px grey, 0 0 35px grey;
 }
+
 .register-form{
   width: 100%;
+  
 }
+
 .register-form > label, 
 .register-form > p{
   font-family: "Open Sans", sans-serif;
   color: rgb(255, 253, 253);
 }
+
 .register-form > input,
 .register-form > select{
   width: 100%;
@@ -852,10 +884,12 @@ form input, form textarea {
   color: gray;
   font-size: 100%;
 }
+
 .genero {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 .masculino{
   margin-left: 0%;
   margin-right: 3%;
@@ -874,9 +908,7 @@ form input, form textarea {
 .regButton:hover {
   background: grey;
   color: #e9ecf0;
-
 }
-
 
 
 /* REGISTRO */
@@ -904,8 +936,6 @@ form input, form textarea {
     margin-left: 25px;
     margin-right: 25px;
   }
-
-  /* LOGIN */
   .login-card > h2,
   .login-card > h3{
     margin-right: 10%;
@@ -925,8 +955,6 @@ form input, form textarea {
     height: 40PX;
     margin-left: 15%;
   }
-   /* LOGIN */
-
   .novedades {
     grid-area: index-header;
     display: grid;
@@ -949,8 +977,6 @@ form input, form textarea {
     display: grid;
     grid-template-areas: "cargador1 cargador1 cargador2 cargador2" "cargador3 cargador3 cargador4 cargador4";
   }
-  /* GRID P/FOOTER */
- 
   .login-card {
     margin: 0;
     width: 400px;
@@ -963,19 +989,17 @@ form input, form textarea {
   }
   .register-form > input,
   .register-form > select{
-  width: 80%;
+  width: 50%;
   height: 80%;
   padding: 5%;
   border-radius: 5px;
-}
-
-.register-form > button {
+  }
+  .register-form > button {
   width: 50%;
-}
-
-.register-form{
+  }
+  .register-form{
   width: 100%;
-}
+  }
 }
 
 
@@ -991,6 +1015,7 @@ form input, form textarea {
     grid-template-areas: "top-navbar top-navbar top-navbar" "nav-bar nav-bar nav-bar" "nav-bar nav-bar nav-bar" "burger burger burger";
   }
 }
+
 @media (min-width: 768px) {
   .product {
     justify-content: space-between;
@@ -1005,8 +1030,6 @@ form input, form textarea {
     width: 100%;
   }
   /* Barra de navegación */
-  
-  
   /* footer */
   .footer-article-container {
     width: 100%;
@@ -1017,7 +1040,6 @@ form input, form textarea {
     "mediosDePago mediosDePago contactanos contactanos";
   }
   /* footer */
-  
   .comentarios {
     grid-template-areas: comentarios;
     display: grid;
@@ -1032,15 +1054,14 @@ form input, form textarea {
   height: 5px;
   padding: 5%;
   border-radius: 5px;
-}
-.register-form > button {
+  }
+  .register-form > button {
   width: 30%;
-}
-#checkboxR {
+  }
+  #checkboxR {
   height: 100%;
+  }
 }
-}
-
 
 /* COMPUTADORAS DE ESCRITORIO */
   @media (min-width: 1024px) {
@@ -1059,22 +1080,20 @@ form input, form textarea {
       width: 90%;
     }
   /* Barra de navegación */
-  .burger-div {
+    .burger-div {
     display: none;
-  }
-  nav {
+    }
+    nav {
     display: flex;
-  }
-  header nav {
+    }
+    header nav {
     padding: 2% 2% 0% 2%;
     display: flex;
-  }
-  header nav ul {
+    }
+    header nav ul {
     display: flex;
     justify-content: space-between;
-  }
-  /* Barra de navegación */
-
+    }
     .index-head {
       grid-area: index-header;
       display: grid;
@@ -1097,14 +1116,14 @@ form input, form textarea {
       display: grid;
       grid-template-areas: "funda1 funda2 funda3 funda4";
     }
-  .others {
+    .others {
       grid-area: others;
       display: grid;
       grid-template-areas: "cargador1 cargador2 cargador3 cargador4";
     }
     /* GRID P/BODY */
     /* GRID P/FOOTER */
-  .footer-article-container {
+    .footer-article-container {
       grid-area: footer-article-container;
       display: grid;
       grid-template-areas: "leyes redes mediosDePago contactanos";
@@ -1114,54 +1133,51 @@ form input, form textarea {
       display: grid;
       grid-template-areas: "nov1 nov1 nov2 nov2" "nov1 nov1 nov2 nov2" "nov3 nov3 nov4 nov4" "nov3 nov3 nov4 nov4";
     }
-  .formulario {
+    .formulario {
     text-align: center;
     width: 50%;
     height: 100%;
     background-size: cover;
     margin-left: 25%;
     }
-  .formulario input {
+    .formulario input {
         width: 50%;
         height: 50%;
         text-align: center;
       }
-  .formulario textarea {
+    .formulario textarea {
         width: 50%;
         height: 50%;
       }
-  .register-form > input,
-  .register-form > select{
+    .register-form > input,
+    .register-form > select{
     width: 30%;
     height: 5px;
     padding: 2%;
     border-radius: 5px;
-  }
-  .register-form > p{
+    }
+    .register-form > p{
     width: 50%;
     margin-left: 25%;
-  }
-  .register-form > button {
+   }
+   .register-form > button {
     width: 20%;
-  }
-  #checkboxR {
+   }
+    #checkboxR {
     height: 100%;
-  }
-
-  #titleLog {
+    }
+    #titleLog {
     font-family: "Rammetto One", cursive;
     color: #504F4F;
     padding: 80px;
     text-align: center;
     font-size: 80px;
-  }
-
-  h1 {
+    }
+    h1 {
     color: #504F4F;
     padding: 15px;
-  }
-
-  p {
+    }
+    p {
     display: flex;
     justify-content: left;
     font-family: "Open Sans", sans-serif;
@@ -1170,7 +1186,7 @@ form input, form textarea {
     text-align: left;
     text-align: justify;
     margin-left: 5%;
-  }
+    }
   }
 
   /*# sourceMappingURL=estilo.css.map */
