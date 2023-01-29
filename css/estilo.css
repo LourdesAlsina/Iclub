@@ -456,7 +456,7 @@ button {
 }
 
 /*PRODUCT DETAILS*/
-.h2-prod-detail {
+.nameProd{
   font-size: 30px;
   color: black;
 }
@@ -501,12 +501,12 @@ button {
   transform: scale(1.2);
 }
 
-.comprar-button:hover, .volver-button:hover {
+.buttonCarrito:hover, .volver-button:hover {
   background-color: rgb(172, 169, 169);
   color: white;
 }
 
-.comprar-button {
+.buttonCarrito {
   margin-top: 10px;
   align-items: center;
   padding: 10px;
@@ -777,6 +777,35 @@ form input, form textarea {
   );  
   animation: AnimateBG 20s ease infinite;
 }
+
+/*CARRITO*/
+
+#cantTotal, #precioTotal {
+  width: 5%;
+  height: 70%;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+.col-12 > button {
+  text-align: center;
+  width: 9%;
+  padding: 10px;
+
+}
+
+.productoX{
+  border:2px solid #ebebeb;
+  
+}
+.productImg {
+  width: 15%;
+  height: 40%;
+
+}
+
 
 @keyframes AnimateBG { 
   0%{background-position:0% 50%}
