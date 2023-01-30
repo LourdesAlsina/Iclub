@@ -15,7 +15,7 @@ function ready() {
     let button = document.querySelector(".buttonCarrito") 
     button.addEventListener("click", (e) => {                   
         agregarItem()
-        alert("Producto agregado al carrito!")
+        //alert("Producto agregado al carrito!")
     })
 }
 
