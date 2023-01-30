@@ -938,8 +938,64 @@ form input, form textarea {
   background: grey;
   color: #e9ecf0;
 }
+/*---------------------------------------------------------------------------------------------------*/
+.contenedorProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.productoX {
+  width: 33%;
+  background-color: #F1F1F1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.productoImagen figure {
+  margin: 0 auto;
+}
+
+.productoImagen img {
+  width: 100%;
+  height: auto;
+}
+
+.productoInformación {
+  margin-top: 20px;
+}
+
+.productoInformación i {
+  float: right;
+  cursor: pointer;
+}
+
+.price {
+  color: gray;
+  font-size: 0.9em;
+}
+
+.nombreProducto {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.productoInformación button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin-top: 10px;
+}
 
 
+
+/*-------------------------------------------------------------------------------------------------------------
 /* REGISTRO */
 
 @media (min-width: 350px) {
