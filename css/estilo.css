@@ -992,7 +992,15 @@ form input, form textarea {
   cursor: pointer;
   margin-top: 10px;
 }
-
+.control-formulario {
+  margin-left: 6%;
+}
+.contenedorProductos {
+  margin-left: 5%;
+}
+.vaciar-carrito {
+  margin-left: 6%;
+}
 
 
 /*-------------------------------------------------------------------------------------------------------------
