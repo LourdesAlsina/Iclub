@@ -15,6 +15,11 @@
         let button = document.querySelector(".buttonCarrito") 
         button.addEventListener("click", (e) => {                   
             agregarItem()
+            Swal.fire(
+                'Exito!',
+                'Producto agregado al carrito!',
+                'success'
+            )
             //alert("Producto agregado al carrito!")
         })
     }
