@@ -938,6 +938,18 @@ form input, form textarea {
   background: grey;
   color: #e9ecf0;
 }
+
+
+/*-------------------------------------------JS DE FRONT--------------------------------------------------------*/
+.is-invalid{
+  color:red;
+  background-color: rgb(235, 162, 162);
+}
+.is-valid{
+  color:green;
+  background-color: rgb(146, 226, 146);
+}
+
 /*---------------------------------------------------------------------------------------------------*/
 .contenedorProductos {
   display: flex;
