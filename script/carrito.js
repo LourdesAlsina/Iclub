@@ -66,14 +66,7 @@
     }
 
 //-----------------------------------------------------------------------------------------------------------
-    const products = [
-        {id:1, iphone:"Iphone", modelo: "13 Pro Max ", precio: 150000, anio: 2022, stock: 7},
-        {id:2, iphone:"Iphone", modelo: "13 Pro Max gold", precio: 150000, anio: 2022, stock: 3},
-        {id:3, iphone:"Iphone",modelo: "13 Max gold green", precio: 150000, anio: 2022, stock: 5},
-        {id:4, iphone:"Iphone", modelo: "12 ", precio: 100000, anio: 2020, stock: 10},
-        {id:6, funda:"Funda blanca", modelo:"12", precio: 150000, stock: 8},
-        {id:7, funda:"Funda aqua",modelo:"12",  precio: 150000, stock: 5},
-    ]
+    
 
     
 

@@ -942,12 +942,13 @@ form input, form textarea {
 
 /*-------------------------------------------JS DE FRONT--------------------------------------------------------*/
 .is-invalid{
-  color:red;
-  background-color: rgb(235, 162, 162);
+  color:rgb(102, 15, 15);
+  font-weight: bold;
+  
 }
 .is-valid{
   color:green;
-  background-color: rgb(146, 226, 146);
+  font-weight: bold;
 }
 
 /*---------------------------------------------------------------------------------------------------*/
@@ -1230,6 +1231,7 @@ form input, form textarea {
     /* GRID P/FOOTER */
     .footer-article-container {
       grid-area: footer-article-container;
+      max-width: 100%;
       display: grid;
       grid-template-areas: "leyes redes mediosDePago contactanos";
     }
@@ -1293,5 +1295,5 @@ form input, form textarea {
     margin-left: 5%;
     }
   }
-
+  
   /*# sourceMappingURL=estilo.css.map */
