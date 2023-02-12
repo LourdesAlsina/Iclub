@@ -389,12 +389,6 @@ footer {
   grid-area: funda4;
 }
 
-.others {
-  grid-area: others;
-  display: grid;
-  grid-template-areas: "cargador1 cargador1 cargador1 cargador1" "cargador2 cargador2 cargador2 cargador2" "cargador3 cargador3 cargador3 cargador3" "cargador4 cargador4 cargador4 cargador4";
-}
-
 #cargador1 {
   grid-area: cargador1;
 }
@@ -634,7 +628,8 @@ h4 {
 .iCPass,
 .iPass,
 .Icheckbox{
-  margin-left: 35%;    
+  margin-left: 35%;
+  color:#868485;    
 }
 .regButton{
   margin-left: 40%;
@@ -951,6 +946,12 @@ form input, form textarea {
   font-weight: bold;
 }
 
+/*----------------------------------VALIDACION REGISTRO ----------------------------------------*/
+
+.errores {
+  margin-left: 5%;
+}
+
 /*---------------------------------------------------------------------------------------------------*/
 .contenedorProductos {
   display: flex;
@@ -1078,11 +1079,7 @@ form input, form textarea {
     display: grid;
     grid-template-areas: "funda1 funda1 funda2 funda2" "funda3 funda3 funda4 funda4";
   }
-  .others {
-    grid-area: others;
-    display: grid;
-    grid-template-areas: "cargador1 cargador1 cargador2 cargador2" "cargador3 cargador3 cargador4 cargador4";
-  }
+  
   .login-card {
     margin: 0;
     width: 400px;
@@ -1222,11 +1219,7 @@ form input, form textarea {
       display: grid;
       grid-template-areas: "funda1 funda2 funda3 funda4";
     }
-    .others {
-      grid-area: others;
-      display: grid;
-      grid-template-areas: "cargador1 cargador2 cargador3 cargador4";
-    }
+    
     /* GRID P/BODY */
     /* GRID P/FOOTER */
     .footer-article-container {
@@ -1294,6 +1287,7 @@ form input, form textarea {
     text-align: justify;
     margin-left: 5%;
     }
+    
   }
   
   /*# sourceMappingURL=estilo.css.map */

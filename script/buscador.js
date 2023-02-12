@@ -1,14 +1,14 @@
 window.onload = function(){
 
 const products = [
-    {id:1, producto: "Iphone", tipo: "Celular", modelo: "13 Pro Max ", precio: 150000, anio: 2022, stock: 7, imagen:"front (1).png", detalleP: "productDetail1.html" },
-    {id:2, producto:"Iphone", tipo: "Celular", modelo: "13 Pro Max gold", precio: 150000, anio: 2022, stock: 3, imagen:"front.png",detalleP: "productDetail2.html"},
-    {id:3, producto:"Iphone", tipo: "Celular",modelo: "13 Max gold green", precio: 150000, anio: 2022, stock: 5, imagen:"iphone verde.jpg", detalleP: "productDetail3.html"},
-    {id:4, producto:"Chori", tipo: "Celular", modelo: "12 ", precio: 100000, anio: 2020, stock: 10, imagen:"ihpone black.jpg", detalleP: "productDetail4.html"},
-    {id:6, producto:"Funda blanca", tipo: "Funda", modelo:"12", precio: 150000, stock: 8, imagen:"MWVX2ZM-A.jpg", detalleP: "productDetail6.html"},
-    {id:7, producto:"Funda aqua", tipo: "Funda", modelo:"12",  precio: 150000, stock: 5, imagen:"MY182.jpg", detalleP: "productDetail7.html"},
-    {id:8, producto:"Funda negra", tipo: "Funda", modelo:"12",  precio: 3000, stock: 9, imagen:"funda negra.webp", detalleP: "productDetail8.html"},
-    {id:9, producto:"Funda rosa", tipo: "Funda", modelo:"13",  precio: 3000, stock: 1, imagen:"funda-silicona-para-iphone-13-con-magsafe-chalk-pink.jpg", detalleP: "productDetail9.html"},
+    {id:1, producto: "Iphone 13 Pro Max Blue", tipo: "Celular", modelo: "13 Pro Max ", precio: 150000, anio: 2022, stock: 7, imagen:"front (1).png", detalleP: "productDetail1.html" },
+    {id:2, producto:"Iphone 13 Pro Max Gold", tipo: "Celular", modelo: "13 Pro Max gold", precio: 150000, anio: 2022, stock: 3, imagen:"front.png",detalleP: "productDetail2.html"},
+    {id:3, producto:"Iphone 13 Max gold Green", tipo: "Celular",modelo: "13 Max gold green", precio: 150000, anio: 2022, stock: 5, imagen:"iphone verde.jpg", detalleP: "productDetail3.html"},
+    {id:4, producto:"Iphone 12 Black", tipo: "Celular", modelo: "12 black", precio: 100000, anio: 2020, stock: 10, imagen:"ihpone black.jpg", detalleP: "productDetail4.html"},
+    {id:5, producto:"Funda blanca", tipo: "Funda", modelo:"12", precio: 150000, stock: 8, imagen:"MWVX2ZM-A.jpg", detalleP: "productDetail6.html"},
+    {id:6, producto:"Funda aqua", tipo: "Funda", modelo:"12",  precio: 150000, stock: 5, imagen:"MY182.jpg", detalleP: "productDetail7.html"},
+    {id:7, producto:"Funda negra", tipo: "Funda", modelo:"12",  precio: 3000, stock: 9, imagen:"funda negra.webp", detalleP: "productDetail8.html"},
+    {id:8, producto:"Funda rosa", tipo: "Funda", modelo:"13",  precio: 3000, stock: 1, imagen:"funda-silicona-para-iphone-13-con-magsafe-chalk-pink.jpg", detalleP: "productDetail9.html"},
 ]
 
 /*let contenedorProducts = document.querySelector(".contenedorPoroducts")
@@ -84,24 +84,21 @@ function renderProds(arrayCualquiera) {
         `
         }
         else if(arrayCualquiera[i].tipo == "Funda"){
-            contenedorAccesorios.innerHTML += `            
-        <div class="contenedorProductos">   
-                    <div class="productoX">
-                        <div class="productoImagen">                            
-                            <figure ><img src="/img/${arrayCualquiera[i].imagen}" alt="${arrayCualquiera[i].producto}" class="productImg"></figure>
-                        </div>
-                        <div class="productoInformación">
-                            
-                            <p class="price">Precio${arrayCualquiera[i].precio}</p>
-                            <i onClick="borrar(${arrayCualquiera[i].id})" class="fa fa-trash"></i>
-                            <p class="price"> Cantidad ${arrayCualquiera[i].stock}</p>
-                            <h4 class="nombreProducto">${arrayCualquiera[i].producto}</h4>                                                         
-                        </div>
+            contenedorAccesorios.innerHTML += `                       
+                <div id="funda${i-3}" class="product">
+                    <div class="prodImg">
+                        <a href="../productDetails/${arrayCualquiera[i].detalleP}"> <img src="../img/${arrayCualquiera[i].imagen}" alt="${arrayCualquiera[i].producto}"></a>
+                    </div>                
+                    <div class="datos">
+                        <h2>${arrayCualquiera[i].producto}</h2>
+                        <p>${arrayCualquiera[i].precio}</p>
+                        <p> Descuento 10% </p>
+                        <p class="idProd"> ${arrayCualquiera[i].id}</p>
+                        <br>
                     </div>
-        </div> 
+                </div>      
         `
-        } 
-        
+        }    
     }
 }
 renderProds(products)
@@ -115,7 +112,7 @@ buscador.oninput = filtrar
 renderProds(products)
 
 function filtrar() {
-    let productosFiltrados = products.filter(products => products.producto.includes(buscInput.value))
+    let productosFiltrados = products.filter(products => products.producto.toUpperCase().includes(buscInput.value.toUpperCase()))
     renderProds(productosFiltrados)
 }
 

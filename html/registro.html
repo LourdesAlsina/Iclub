@@ -49,12 +49,13 @@
     </header>     
     <main class="register-main">
         <h2 class="letrasubtitulo">Registrate</h2>
+            <div class="errores"></div>
             <form class="register-form">
                 <label class="fNombre" for="nombre">Nombre</label>
                 <input class="iNombre" type="text" id="nombre">
                 <label class="fApellido" for="apellido">Apellido</label>
                 <input class="iApellido" type="text" id="apellido">
-                <label for="#">Género</label>
+                <label for="#" class="generoC">Género</label>
                 <p>
                     <input class="masculino" type="radio"><label class="genero" for="genero">Masculino</label>
                     <input class="genero" type="radio"> <label class="genero" for="genero">Femenino</label>
@@ -63,9 +64,9 @@
                 <label for="date">Fecha de nacimiento</label>
                 <input class="iFecha" type="date" name="fecha de nacimiento" id="fecha">
                 <label for="number">Número de Teléfono</label>
-                <input class="iTel" type="tel">
+                <input class="iTel" type="tel" id="tel">
                 <label for="city">Provincia</label>
-                <select class="sProvincia" name="characters">
+                <select class="sProvincia" name="characters">                    
                     <option value="Salta">Salta</option>
                     <option value="Buenos Aires">Buenos Aires</option>
                     <option value="Córdoba">Córdoba</option>
@@ -167,4 +168,6 @@
     </script>
     <script src="/script/carrito.js"></script>
     <script src="/script/displayCarrito.js"></script>
+    <script src="/script/registerValidacion.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
