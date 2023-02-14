@@ -389,21 +389,6 @@ footer {
   grid-area: funda4;
 }
 
-#cargador1 {
-  grid-area: cargador1;
-}
-
-#cargador2 {
-  grid-area: cargador2;
-}
-
-#cargador3 {
-  grid-area: cargador3;
-}
-
-#cargador4 {
-  grid-area: cargador4;
-}
 
 .prodImg {
   width: 100%;

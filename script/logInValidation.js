@@ -43,11 +43,6 @@ window.onload = function(){
         else {
             ulErrors.innerHTML += `<li> Ingresaste los datos correctamente </li>`
             ulErrors.classList.add('is-valid')
-            /*const body = {
-                email: e.target.email.value,
-                contraseña: e.target.contraseña.value,
-                
-            }*/
         }
     })
 }

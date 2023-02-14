@@ -20,7 +20,6 @@
                 'Producto agregado al carrito!',
                 'success'
             )
-            //alert("Producto agregado al carrito!")
         })
     }
 
@@ -64,10 +63,3 @@
         localStorage.setItem("productosEnCarrito", JSON.stringify(prodsCart)) 
         cartNumber() 
     }
-
-//-----------------------------------------------------------------------------------------------------------
-    
-
-    
-
-//-------------------------------------------------------------------------------------------------

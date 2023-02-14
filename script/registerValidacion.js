@@ -63,7 +63,7 @@ window.onload = function(){
             tel.classList.add('is-valid')
             tel.classList.remove('is-invalid')
         }
-        /// VALIDACION birth_date
+        /// VALIDACION FECHA NACIMIENTO
         if (birth_date.value == '') {
             errors.push('Debes ingresar tu cumpleaños!')
             birth_date.classList.add('is-invalid')
@@ -81,7 +81,7 @@ window.onload = function(){
             domicilio.classList.add('is-valid')
             domicilio.classList.remove('is-invalid')
         }
-        /// VALIDACION pass
+        /// VALIDACION CONTRASEÑA
         if (pass.value.length <= 8) {
             errors.push('Debes ingresar una contraseña de al menos 9 caracteres!')
             pass.classList.add('is-invalid')
@@ -114,14 +114,7 @@ window.onload = function(){
             genero.classList.add('is-valid')
             genero.classList.remove('is-invalid')
         }
-        if (terycon.value == "") {
-            errors.push('Campo obligatorio')
-            provincias.classList.add('is-invalid')
-        }
-        else{
-            terycon.classList.add('is-valid')
-            terycon.classList.remove('is-invalid')
-        }
+        
         let ulErrors = document.querySelector('.errores');
         ulErrors.classList.add('alert-warning')
         ulErrors.innerHTML = '';
@@ -138,19 +131,6 @@ window.onload = function(){
         }
         else {
             e.preventDefault()
-            /*const body = {
-                nya: e.target.nya.value,
-                nombre: e.target.nombre.value,
-                email: e.target.email.value,
-                tel: e.target.tel.value,
-                birth_date: e.target.birth_date.value,
-                domicilio: e.target.domicilio.value,
-                pass: e.target.pass.value,
-                pass_confirm: e.target.pass_confirm.value,
-                avatar: e.target.avatar.value,
-                provincias: e.target.provincias.value
-            }*/
-           
 
         }
     })
